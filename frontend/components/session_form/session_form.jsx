@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
+import Modal from 'react-modal';
+import ModalStyling from './modal_styling';
 
 class SessionForm extends React.Component {
 
@@ -52,6 +54,12 @@ class SessionForm extends React.Component {
 
   render() {
     return (
+      <div className="nav-container">
+      <nav className="login-signup">
+        <Link to="/login">Log In</Link>
+        <br />
+        <Link to="/signup">Sign Up</Link>
+      </nav>
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
           Welcome to MeowNow!
@@ -77,6 +85,7 @@ class SessionForm extends React.Component {
             <input type="submit" value="Submit" />
           </div>
         </form>
+      </div>
       </div>
     );
   }
