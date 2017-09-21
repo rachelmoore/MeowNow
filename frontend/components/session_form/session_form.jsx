@@ -9,16 +9,32 @@ class SessionForm extends React.Component {
     super(props);
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      modalOpen: false,
+      formType: "Log In"
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.update = this.update.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+    this.openModal = this.openModal.bind(this);
+    console.log(this.state);
   }
 
-  // componentWillReceiveProps(newProps) {
-  //   if (newProps.loggedIn) {
-  //     this.props.history.push("/");
-  //   }
-  // }
+  closeModal() {
+    this.setState({ modalOpen: false })
+  }
+
+  openModal(type) {
+    this.setState({ modalOpen: true, formType: type })
+  }
+
+  modalButton() {
+    if (this.state.formType === "Log In") {
+      return "Log In";
+    } else {
+      return "Sign Up";
+    }
+  }
 
   update(field) {
     return (e) => this.setState({
@@ -29,7 +45,11 @@ class SessionForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm({user});
+    if (this.state.formType === "Log In") {
+      this.props.login(user);
+    } else {
+      this.props.signup(user);
+    }
   }
 
   renderErrors() {
@@ -44,48 +64,63 @@ class SessionForm extends React.Component {
     );
   }
 
-  navLink() {
-    if (this.props.formType === 'login') {
-      return <Link to="/signup">Sign Up</Link>;
-    } else {
-      return <Link to="/login">Log In</Link>;
-    }
-  }
 
   render() {
     return (
       <div className="nav-container">
-      <nav className="login-signup">
-        <Link to="/login">Log In</Link>
-        <br />
-        <Link to="/signup">Sign Up</Link>
-      </nav>
-      <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
-          Welcome to MeowNow!
-          <br/>
-          Please {this.props.formType} or {this.navLink()}
-          {this.renderErrors()}
-          <div className="login-form">
-            <br/>
-            <label>Username
-              <input type="text"
-                value={this.state.username}
-                onChange={this.update('username')}
-                className="login-input" />
-            </label>
-            <br/>
-            <label>Password
-              <input type="password"
-                value={this.state.password}
-                onChange={this.update('password')}
-                className="login-input" />
-            </label>
-            <br/>
-            <input type="submit" value="Submit" />
+
+        <div className="logo-container">
+          <h2>MeowNow</h2>
+          <img src="https://i.imgur.com/dPJ7A0L.png" />
+        </div>
+
+        <div className="login-signup-buttons">
+          <button className="login-button" onClick={this.openModal.bind(this, "Log In")}>Log In</button>
+          <button className="signup-button" onClick={this.openModal.bind(this, "Sign Up")}>Sign Up</button>
+        </div>
+
+        <Modal
+          isOpen={this.state.modalOpen}
+          onRequestClose={this.closeModal}
+          style={ModalStyling}>
+
+          <div className="modal-form-container">
+            <form className="login-form-box">
+              {this.renderErrors()}
+
+              <div className="login-form">
+
+                <label>Username
+                  <input type="text"
+                    className="modal-input"
+                    value={this.state.username}
+                    onChange={this.update('username')}
+                    />
+                </label>
+
+                <label>Password
+                  <input type="text"
+                    className='modal-input'
+                    value={this.state.password}
+                    onChange={this.update('password')}
+                    />
+                </label>
+
+                <div className="modal-button-container">
+                  <button className="modal-button" onClick={this.handleSubmit}>
+                    {this.modalButton()}
+                  </button>
+                  <button className="modal-button" onClick={this.handleSubmit}>
+                    Demo Login
+                  </button>
+                </div>
+
+              </div>
+
+            </form>
           </div>
-        </form>
-      </div>
+
+        </Modal>
       </div>
     );
   }
@@ -93,3 +128,39 @@ class SessionForm extends React.Component {
 }
 
 export default withRouter(SessionForm);
+
+
+
+
+// <div className="nav-container">
+// <nav className="login-signup">
+//   <Link to="/login">Log In</Link>
+//   <br />
+//   <Link to="/signup">Sign Up</Link>
+// </nav>
+// <div className="login-form-container">
+//   <form onSubmit={this.handleSubmit} className="login-form-box">
+//     Welcome to MeowNow!
+//     <br/>
+//     {this.renderErrors()}
+//     <div className="login-form">
+//       <br/>
+//       <label>Username
+//         <input type="text"
+//           value={this.state.username}
+//           onChange={this.update('username')}
+//           className="login-input" />
+//       </label>
+//       <br/>
+//       <label>Password
+//         <input type="password"
+//           value={this.state.password}
+//           onChange={this.update('password')}
+//           className="login-input" />
+//       </label>
+//       <br/>
+//       <input type="submit" value="Submit" />
+//     </div>
+//   </form>
+// </div>
+// </div>
