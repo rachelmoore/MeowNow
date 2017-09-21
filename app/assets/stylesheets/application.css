@@ -69,12 +69,12 @@ body {
 
 .signup-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
-  cursor: url('http://hellahoops.com/catcursor_Ws1_icon.ico'), default;
+  cursor: url('http://hellahoops.com/smallestpaw.ico'), default;
 }
 
 .login-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
-  cursor: url('http://hellahoops.com/catcursor_Ws1_icon.ico'), default;
+  cursor: url('http://hellahoops.com/smallestpaw.ico'), default;
 }
 
 .modal-form-container
