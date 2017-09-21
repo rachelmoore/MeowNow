@@ -71,7 +71,7 @@ class SessionForm extends React.Component {
 
         <div className="logo-container">
           <h2>MeowNow</h2>
-          <img src="https://i.imgur.com/dPJ7A0L.png" />
+          <img src="https://i.imgur.com/dPJ7A0L.png" height="65px" />
         </div>
 
         <div className="login-signup-buttons">
@@ -128,39 +128,3 @@ class SessionForm extends React.Component {
 }
 
 export default withRouter(SessionForm);
-
-
-
-
-// <div className="nav-container">
-// <nav className="login-signup">
-//   <Link to="/login">Log In</Link>
-//   <br />
-//   <Link to="/signup">Sign Up</Link>
-// </nav>
-// <div className="login-form-container">
-//   <form onSubmit={this.handleSubmit} className="login-form-box">
-//     Welcome to MeowNow!
-//     <br/>
-//     {this.renderErrors()}
-//     <div className="login-form">
-//       <br/>
-//       <label>Username
-//         <input type="text"
-//           value={this.state.username}
-//           onChange={this.update('username')}
-//           className="login-input" />
-//       </label>
-//       <br/>
-//       <label>Password
-//         <input type="password"
-//           value={this.state.password}
-//           onChange={this.update('password')}
-//           className="login-input" />
-//       </label>
-//       <br/>
-//       <input type="submit" value="Submit" />
-//     </div>
-//   </form>
-// </div>
-// </div>
