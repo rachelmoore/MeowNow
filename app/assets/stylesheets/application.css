@@ -180,11 +180,12 @@ body {
 }
 
 .logo-text {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   width: 500px;
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 65px;
 }
 
 .tagline-text {
