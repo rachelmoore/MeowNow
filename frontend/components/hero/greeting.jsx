@@ -11,8 +11,14 @@ const sessionLinks = () => (
 
 const personalGreeting = (currentUser, logout) => (
   <header className="greetings-header">
-    <h2 className="username-greeting">Welcome, {currentUser.username}!</h2>
-    <button className="logout-button" onClick={logout}>Log Out</button>
+    <div className="logo-container">
+      <h2>MeowNow</h2>
+      <img src="https://i.imgur.com/dPJ7A0L.png" height="65px" />
+    </div>
+    <div className="greeting-container">
+      <h2 className="username-greeting">Welcome, {currentUser.username}!</h2>
+      <button className="logout-button" onClick={logout}>Log Out</button>
+    </div>
   </header>
 );
 

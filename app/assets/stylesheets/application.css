@@ -116,3 +116,43 @@ body {
   text-transform: uppercase;
   margin: 10px;
 }
+
+/* Greetings Bar */
+
+.greetings-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.greeting-container {
+  display: inline-flex;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 300px;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+}
+
+.username-greeting {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.logout-button {
+  min-height: 25px;
+  color: #2e2e2e;
+  background-color: transparent;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.logout-button:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
+  background-color: #F3F315;
+}
