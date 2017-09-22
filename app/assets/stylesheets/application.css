@@ -189,6 +189,7 @@ body {
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
   font-size: 65px;
+  padding-top: 35px;
 }
 
 .tagline-text {
@@ -200,7 +201,9 @@ body {
 }
 
 .cat-banner {
+  margin-top: auto;
   display: flex;
   justify-content: flex-end;
   align-items: baseline;
+  padding-bottom: 20px;
 }
