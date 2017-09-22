@@ -69,22 +69,50 @@ body {
 
 .signup-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
-  cursor: url('http://hellahoops.com/smallestpaw.ico'), default;
+  cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
+  background-color: #F3F315;
 }
 
 .login-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
-  cursor: url('http://hellahoops.com/smallestpaw.ico'), default;
+  cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
+  background-color: #F3F315;
 }
 
-.modal-form-container
+/* .modal-form-container {
+
+}
 
 .login-form-box
 
-.login-form
+.login-form {
 
-.modal-input
 
-.modal-button-container
+}*/
 
-.modal-button
+.modal-input {
+  width: 100%
+  border: 2px solid #2e2e2e;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-button:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.modal-button {
+  min-height: 25px;
+  color: #2e2e2e;
+  background-color: transparent;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 10px;
+}

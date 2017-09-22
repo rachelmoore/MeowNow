@@ -10,11 +10,12 @@ const ModalStyling = {
   },
   content : {
     position        : 'fixed',
-    top             : '100px',
-    left            : '150px',
-    right           : '150px',
-    bottom          : '100px',
-    border          : '1px solid #ccc',
+    top             : '50%',
+    left            : '50%',
+    right           : 'auto',
+    transform       : 'translate(-50%, -50%)',
+    bottom          : 'auto',
+    border          : '2px solid #2e2e2e',
     padding         : '20px',
     zIndex          : 11
   }
