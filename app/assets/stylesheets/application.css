@@ -212,6 +212,27 @@ body {
 
 /*Search */
 
+.search-container {
+
+}
+
+.search-form {
+  padding-top: 50px;
+}
+
+input[type="search"] {
+    font-size: 16px;
+    border-left: 2px solid #2e2e2e;
+    border-top: 2px solid #2e2e2e;
+    border-bottom: 2px solid #2e2e2e;
+    border-right: 2px solid #2e2e2e;
+    height: 42px; /* or whatever height necessary */
+}
+
+.search-input {
+width: 500px;
+}
+
 .yellow-span {
   /*color: #F3F315;*/
   text-shadow: #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,
@@ -224,7 +245,9 @@ body {
 
 .search-button {
   background-color: white;
-  border: 1px solid #2e2e2e;
+  border: 2px solid #2e2e2e;
+  height: 42px;
+  padding-bottom: 5px;
 }
 
 .search-button:hover {
