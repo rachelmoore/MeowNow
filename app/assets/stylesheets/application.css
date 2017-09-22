@@ -92,7 +92,7 @@ body {
 }*/
 
 .modal-input {
-  width: 100%
+  width: 100%;
   border: 2px solid #2e2e2e;
   display: flex;
   flex-direction: column;
