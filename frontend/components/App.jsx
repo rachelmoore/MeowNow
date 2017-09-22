@@ -16,7 +16,10 @@ const App = () => (
       <AuthRoute exact path="/" component={SessionFormContainer} />
       <ProtectedRoute exact path="/home" component={GreetingContainer} />
     </header>
-    
+    <main className="main">
+      <Route exact path="/" component={HeroContainer} />
+      <Route exact path="/home" component={HeroContainer} />
+    </main>
   </div>
 );
 

@@ -15,7 +15,8 @@
  */
 
 body {
-  font-family: 'Open Sans', sans-serif;}
+  font-family: 'Open Sans', sans-serif;
+}
 
 
 /* Sessions Form */
@@ -37,12 +38,12 @@ body {
 
 .logo-container h2 {
   padding-top: 10px;
-  padding-left: 20px;
+  padding-left: 100px;
 }
 
 .login-signup-buttons {
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 100px;
 }
 
 .login-button {
@@ -128,7 +129,7 @@ body {
 .greeting-container {
   display: inline-flex;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 100px;
   width: 300px;
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
@@ -155,4 +156,33 @@ body {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
   cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
   background-color: #F3F315;
+}
+
+
+/* Hero */
+
+.hero-container {
+  height: 600px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.text-search-container {
+
+}
+
+.logo-text {
+
+}
+
+.tagline-text {
+
+}
+
+.search {
+
+}
+
+.cat-banner {
+  float: right;
 }
