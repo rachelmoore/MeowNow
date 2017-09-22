@@ -17,13 +17,15 @@ class Search extends React.Component {
 
   render() {
     return (
+      <div className="search-container">
       <form className="search-form">
         <input type="search"
           className="search-input"
           placeholder="Search by Location"
           onChange={this.update('query')} />
-        <button><i className="fa fa-search" aria-hidden="true"></i></button>
       </form>
+      <button><i className="fa fa-search" aria-hidden="true"></i></button>
+      </div>
     )
   }
 }

@@ -218,3 +218,9 @@ body {
   align-items: baseline;
   padding-bottom: 20px;
 }
+
+/*Search */
+
+.fa-search {
+  color: blue;
+}
