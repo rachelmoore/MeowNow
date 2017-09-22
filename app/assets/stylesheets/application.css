@@ -163,16 +163,28 @@ body {
 
 .hero-container {
   height: 600px;
+  min-width: 600px;
   margin-left: 100px;
   margin-right: 100px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .text-search-container {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-text {
-
+  display: inline-block;
+  width: 500px;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 45px;
 }
 
 .tagline-text {
@@ -184,5 +196,7 @@ body {
 }
 
 .cat-banner {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
 }
