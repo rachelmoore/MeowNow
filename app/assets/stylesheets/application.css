@@ -14,10 +14,19 @@
  *= require_self
  */
 
+
+
 body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.yellow-span {
+  color: #F3F315;
+  text-shadow: #000 0px 0px 2px;
+    -webkit-font-smoothing: antialiased;
+  font-size: 22px;
+  font-weight: bold;
+}
 
 /* Sessions Form */
 
@@ -193,7 +202,8 @@ body {
 }
 
 .tagline-text {
-
+  font-size: 19px;
+  padding-top: 8px;
 }
 
 .search {

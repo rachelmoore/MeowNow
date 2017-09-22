@@ -87,7 +87,6 @@ class SessionForm extends React.Component {
 
           <div className="modal-form-container">
             <form className="login-form-box">
-              {this.renderErrors()}
 
               <div className="login-form">
 
@@ -114,6 +113,10 @@ class SessionForm extends React.Component {
                   <button className="modal-button" onClick={this.handleSubmit}>
                     Demo Login
                   </button>
+                </div>
+
+                <div className="errors-container">
+                  <center>{this.renderErrors()}</center>
                 </div>
 
               </div>
