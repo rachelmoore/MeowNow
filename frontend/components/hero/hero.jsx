@@ -1,4 +1,5 @@
 import React from 'react';
+import Search from '../search/search'
 
 class Hero extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ class Hero extends React.Component {
             <h5>Find <span className="yellow-span">public cats</span> near you!</h5>
           </div>
           <div className="search">
-            <p>Search here</p>
+            <Search /> 
           </div>
         </div>
 
