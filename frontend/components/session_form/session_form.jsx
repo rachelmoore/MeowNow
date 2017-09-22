@@ -22,6 +22,7 @@ class SessionForm extends React.Component {
 
   closeModal() {
     this.setState({ modalOpen: false })
+    this.props.clearErrors();
   }
 
   openModal(type) {
