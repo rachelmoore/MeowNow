@@ -23,8 +23,8 @@ class Search extends React.Component {
           className="search-input"
           placeholder="Search by Location"
           onChange={this.update('query')} />
+        <button className="search-button"><i className="fa fa-search fa-2x" aria-hidden="true"></i></button>
       </form>
-      <button><i className="fa fa-search" aria-hidden="true"></i></button>
       </div>
     )
   }

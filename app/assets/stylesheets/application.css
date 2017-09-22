@@ -20,16 +20,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.yellow-span {
-  color: #F3F315;
-  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
-  #000 0px 0px 1px;
-    -webkit-font-smoothing: antialiased;
-  font-size: 24px;
-  font-weight: 600;
-
-}
-
 /* Sessions Form */
 
 .nav-container {
@@ -222,6 +212,27 @@ body {
 
 /*Search */
 
+.yellow-span {
+  /*color: #F3F315;*/
+  text-shadow: #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,
+  #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+.search-button {
+  background-color: white;
+  border: 1px solid #2e2e2e;
+}
+
+.search-button:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
+  background-color: #F3F315;
+}
+
 .fa-search {
-  color: blue;
+  width: 25px;
 }
