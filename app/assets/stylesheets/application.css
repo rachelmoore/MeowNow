@@ -93,6 +93,18 @@ body {
 
 }
 
+.modal-logo {
+  display: flex;
+  justify-content: center;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.modal-logo-text {
+  padding: 10px;
+}
+
 .modal-input {
   width: 100%;
   border: 2px solid #2e2e2e;

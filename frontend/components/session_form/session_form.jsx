@@ -88,6 +88,11 @@ class SessionForm extends React.Component {
           <div className="modal-form-container">
             <form className="login-form-box">
 
+              <div className="modal-logo">
+                  <h2 className="modal-logo-text">MeowNow</h2>
+                  <img src="http://hellahoops.com/catdoodletransparent.png" height="45px" />
+              </div>
+
               <div className="login-form">
 
                 <label>Username
