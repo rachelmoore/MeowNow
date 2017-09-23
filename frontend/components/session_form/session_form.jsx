@@ -104,7 +104,7 @@ class SessionForm extends React.Component {
                 </label>
 
                 <label>Password
-                  <input type="text"
+                  <input type="password"
                     className='modal-input'
                     value={this.state.password}
                     onChange={this.update('password')}
