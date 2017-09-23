@@ -17,7 +17,8 @@ const ModalStyling = {
     bottom          : 'auto',
     border          : '2px solid #2e2e2e',
     padding         : '20px',
-    zIndex          : 11
+    zIndex          : 11,
+    backgroundColor : '#d3d3d3' 
   }
 }
 

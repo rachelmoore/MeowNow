@@ -81,16 +81,17 @@ body {
   background-color: #F3F315;
 }
 
-/* .modal-form-container {
+ .modal-form-container {
 
 }
 
-.login-form-box
+.login-form-box {
+
+}
 
 .login-form {
 
-
-}*/
+}
 
 .modal-input {
   width: 100%;
@@ -113,7 +114,7 @@ body {
 .modal-button {
   min-height: 25px;
   color: #2e2e2e;
-  background-color: transparent;
+  background-color: #FFFFFF;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
   font-size: 13px;
@@ -250,6 +251,7 @@ width: 500px;
   border: 2px solid #2e2e2e;
   height: 42px;
   padding-bottom: 5px;
+  background-color: #d3d3d3;
 }
 
 .search-button:hover {
