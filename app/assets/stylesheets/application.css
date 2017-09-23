@@ -170,7 +170,7 @@ body {
   margin-left: 100px;
   margin-right: 100px;
   border: 2px solid #2e2e2e;
-  /*border-radius: 5px;*/
+  border-radius: 5px;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -226,7 +226,9 @@ input[type="search"] {
     border-top: 2px solid #2e2e2e;
     border-bottom: 2px solid #2e2e2e;
     border-right: 2px solid #2e2e2e;
-    height: 42px; /* or whatever height necessary */
+    border-radius: 10px;
+    height: 42px;
+    margin-right: 8px;
 }
 
 .search-input {
