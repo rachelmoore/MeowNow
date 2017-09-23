@@ -1,7 +1,7 @@
 import { RECEIVE_LOCATIONS, RECEIVE_LOCATION } from '../actions/location_actions';
 import { merge } from 'lodash';
 
-const locationsReducer = (state = {}, action) => {
+const LocationsReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_LOCATIONS:
@@ -13,4 +13,4 @@ const locationsReducer = (state = {}, action) => {
   }
 };
 
-export default locationsReducer;
+export default LocationsReducer;
