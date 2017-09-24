@@ -276,8 +276,75 @@ width: 500px;
   width: 25px;
 }
 
+/* Locations Index */
+
+.locations-index-container {
+  min-width: 800px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 20px;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+}
+
+.locations-list-and-map {
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border: 2px solid yellow;
+
+}
+
+.locations-list {
+
+}
+
+.locations-list-map {
+  border: 2px solid orange;
+
+}
+
+/* Locations Index Item */
+
+.locations-index-item-all {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid red;
+}
+
+.locations-index-item-main {
+  border: 2px solid blue;
+
+}
+
+.locations-index-item-image {
+
+}
+
+.locations-index-item-name {
+
+}
+
+.locations-index-item-rating {
+
+}
+
+.locations-index-item-free {
+
+}
+
+.locations-index-item-adoptable {
+
+}
+
+.locations-index-item-contact {
+  border: 2px solid green;
+}
+
+/* Location Show */
+
 /* Map */
 .location-map {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
 }

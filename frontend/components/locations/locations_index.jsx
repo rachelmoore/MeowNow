@@ -14,16 +14,21 @@ class LocationsIndex extends React.Component {
   render() {
     const locations = this.props.locations;
       return (
-        <div className="locations-search-container">
+        <div className="locations-index-container">
           <div className="locations-list-and-map">
-            <ul className="locations-list">
-              {locations.map((location) => (
-                <LocationsIndexItem key={location.id} location={location} />
-              ))}
-            </ul>
+
+            <div className="locations-list">
+              <ul>
+                {locations.map((location) => (
+                  <LocationsIndexItem key={location.id} location={location} />
+                ))}
+              </ul>
+            </div>
+
             <div className="locations-list-map">
               <LocationMap />
             </div>
+
           </div>
         </div>
     );
