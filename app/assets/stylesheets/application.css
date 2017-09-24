@@ -279,7 +279,7 @@ width: 500px;
 /* Locations Index */
 
 .locations-index-container {
-  min-width: 800px;
+  min-width: 1000px;
   margin-left: 100px;
   margin-right: 100px;
   padding: 20px;
@@ -366,6 +366,6 @@ width: 500px;
 
 /* Map */
 .location-map {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
 }

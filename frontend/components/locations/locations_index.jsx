@@ -1,6 +1,6 @@
 import React from 'react';
 import LocationsIndexItem from './locations_index_item';
-import LocationMap from '../maps/location_map';
+import LocationsIndexMap from '../maps/locations_index_map';
 
 class LocationsIndex extends React.Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class LocationsIndex extends React.Component {
             </div>
 
             <div className="locations-list-map">
-              <LocationMap />
+              <LocationsIndexMap />
             </div>
 
           </div>
