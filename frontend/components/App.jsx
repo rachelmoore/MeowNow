@@ -23,6 +23,7 @@ const App = () => (
       <Route exact path="/home" component={HeroContainer} />
       <Route exact path="/locations" component={LocationsIndexContainer} />
       <Route exact path="/locations/:locationId" component={LocationShowContainer} />
+
     </main>
   </div>
 );
