@@ -301,7 +301,7 @@ width: 500px;
 
 .locations-list-map {
   border: 2px solid orange;
-
+  padding-top: 10px;
 }
 
 /* Locations Index Item */
@@ -359,7 +359,7 @@ width: 500px;
 }
 
 .locations-index-item-rating {
-
+  padding-bottom: 10px;
 }
 
 /* Location Show */

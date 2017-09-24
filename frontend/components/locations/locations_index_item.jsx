@@ -18,7 +18,7 @@ const LocationsIndexItem = ({ location }) => {
           </div>
           <div className="locations-index-item-details-container">
             <div className="locations-index-item-details">
-            <p className="locations-index-item-rating">5 STARS</p>
+            <div className="locations-index-item-rating"><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i></div>
             <p>{location.street_address}</p>
             <p>{location.city} {location.state}</p>
             </div>
