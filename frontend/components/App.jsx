@@ -6,6 +6,7 @@ import GreetingContainer from './hero/greeting_container';
 import SessionFormContainer from './session_form/session_form_container';
 import HeroContainer from './hero/hero_container';
 import LocationsIndexContainer from './locations/locations_index_container';
+import LocationShowContainer from './locations/location_show_container';
 // import AdoptableContainer from './features/adoptable_container';
 // import ShopContainer from './features/shop_container';
 import { AuthRoute } from '../util/route_util';
@@ -21,6 +22,7 @@ const App = () => (
       <Route exact path="/" component={HeroContainer} />
       <Route exact path="/home" component={HeroContainer} />
       <Route exact path="/locations" component={LocationsIndexContainer} />
+      <Route exact path="/locations/:locationId" component={LocationShowContainer} />
     </main>
   </div>
 );

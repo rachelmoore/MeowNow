@@ -11,17 +11,13 @@ class LocationsIndex extends React.Component {
 
   render() {
     const locations = this.props.locations;
-    if (locations) {
       return (
       <ul className="locations-list">
         {locations.map((location, idx) => (
-          <li>{location.id}</li>
+          <center><li>{location.location_name}</li></center>
         ))}
       </ul>
     );
-  } else {
-    return <p>fail</p>
-  }
   }
 
 }

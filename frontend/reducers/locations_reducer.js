@@ -7,7 +7,7 @@ const LocationsReducer = (state = {}, action) => {
     case RECEIVE_LOCATIONS:
       return action.locations;
     case RECEIVE_LOCATION:
-      return merge({}, state, [action.location.id]: action.location);
+      return merge({}, state, {[action.location.id]: action.location});
     default:
       return state;
   }
