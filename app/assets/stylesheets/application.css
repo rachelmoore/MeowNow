@@ -309,16 +309,31 @@ width: 500px;
 .locations-index-item-all {
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
   min-width: 400px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: #d3d3d3;
 }
 
 .locations-index-item-name {
   border: 2px solid purple;
+  padding-bottom: 10px;
 }
 
 .locations-index-item-name-link {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000000;
+}
 
+.locations-index-item-name-link:hover {
+  text-shadow: #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,
+    #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
 }
 
 .locations-index-item-info {
