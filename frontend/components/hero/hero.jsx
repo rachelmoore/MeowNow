@@ -1,5 +1,6 @@
 import React from 'react';
 import Search from '../search/search'
+import { Link, Redirect, withRouter } from 'react-router-dom';
 
 class Hero extends React.Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class Hero extends React.Component {
             <h5>Find <span className="yellow-span">public cats</span> near you!</h5>
           </div>
           <div className="search">
-            <Search /> 
+            <Search />
           </div>
         </div>
 
@@ -32,4 +33,4 @@ class Hero extends React.Component {
   }
 }
 
-export default Hero;
+export default withRouter(Hero);

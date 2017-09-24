@@ -7,6 +7,17 @@ class Search extends React.Component {
     this.state = {
       query: ""
     }
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    this.props.fetchLocations().then(
+      () => {
+        if (this.props.locations.hash !== "/locations") {
+          this.props.history.push("/locations")
+        }
+      });
   }
 
   update(field) {
@@ -18,7 +29,7 @@ class Search extends React.Component {
   render() {
     return (
       <div className="search-container">
-      <form className="search-form">
+      <form className="search-form" onSubmit={ this.handleSubmit }>
         <input type="search"
           className="search-input"
           placeholder="Search by Location"
