@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router-dom';
+import MarkerManager from '../../util/marker_manager';
 
 class LocationMap extends React.Component {
 
@@ -13,6 +14,7 @@ class LocationMap extends React.Component {
 
     // wrap the mapDOMNode in a Google Map
     this.map = new google.maps.Map(this.mapNode, mapOptions);
+    this.MarkerManager = new MarkerManager(this.map);
   }
 
 
