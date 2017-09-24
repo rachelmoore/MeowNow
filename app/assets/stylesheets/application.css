@@ -289,7 +289,7 @@ width: 500px;
 
 .locations-list-and-map {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #FFFFFF;
   border: 2px solid yellow;
 
@@ -308,37 +308,43 @@ width: 500px;
 
 .locations-index-item-all {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border: 2px solid red;
-}
-
-.locations-index-item-main {
-  border: 2px solid blue;
-
-}
-
-.locations-index-item-image {
-
+  min-width: 400px;
 }
 
 .locations-index-item-name {
+  border: 2px solid purple;
+}
 
+.locations-index-item-name-link {
+
+}
+
+.locations-index-item-info {
+  border: 2px solid orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.locations-index-item-photo {
+
+}
+
+.locations-index-item-details-container {
+  border: 2px solid blue;
+  width: 150px;
+}
+
+.locations-index-item-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .locations-index-item-rating {
 
-}
-
-.locations-index-item-free {
-
-}
-
-.locations-index-item-adoptable {
-
-}
-
-.locations-index-item-contact {
-  border: 2px solid green;
 }
 
 /* Location Show */
