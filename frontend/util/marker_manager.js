@@ -1,4 +1,4 @@
-class MarkerManager {
+export default class MarkerManager {
   constructor(map, handleClick){
     this.map = map;
     this.handleClick = handleClick;
@@ -26,8 +26,8 @@ class MarkerManager {
       locationId: location.id
     });
 
-    marker.addListener('click', () => this.handleClick(location));
-    this.markers[marker.locationId] = marker;
+    marker.setMap(this.map);
+    this.markers[location.id] = marker;
   }
 
   removeMarker(marker) {
@@ -35,5 +35,3 @@ class MarkerManager {
     delete this.markers[marker.locationId];
   }
 }
-
-export default MarkerManager;

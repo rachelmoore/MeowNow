@@ -26,7 +26,7 @@ class LocationsIndex extends React.Component {
             </div>
 
             <div className="locations-list-map">
-              <LocationsIndexMap />
+              <LocationsIndexMap locations={locations} fetchLocations={this.props.fetchLocations}/>
             </div>
 
           </div>

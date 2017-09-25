@@ -305,11 +305,15 @@ class LocationsIndexMap extends React.Component {
 ]
     };
 
-
-
-    // wrap the mapDOMNode in a Google Map
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
+    let map = this.refs.map;
+    this.props.fetchLocations();
+    this.MarkerManager.updateMarkers(this.props.locations);
+  }
+
+  componentDidUpdate() {
+    this.MarkerManager.updateMarkers(this.props.locations);
   }
 
 
