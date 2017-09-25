@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LocationShowMap from '../maps/location_show_map';
 
 class LocationShow extends React.Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class LocationShow extends React.Component {
             <div className="location-show-map-cats-container">
               <div className="location-map-contact-container">
                 <div className="location-map">
-
+                  <LocationShowMap />
                 </div>
                 <div className="location-contact">
                   <p>{location.street_address}</p>

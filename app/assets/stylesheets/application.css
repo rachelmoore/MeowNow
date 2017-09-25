@@ -385,18 +385,23 @@ width: 500px;
   flex-direction: column;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
-  min-width: 400px;
+  min-width: 600px;
   padding: 20px;
   margin-top: 15px;
   background-color: #E9E5CA;
 }
 
 .location-show-header-container {
-
+  border: 2px solid purple;
+  padding-bottom: 10px;
 }
 
 .location-show-name {
-
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .location-show-rating {
@@ -404,7 +409,10 @@ width: 500px;
 }
 
 .location-show-map-cats-container {
-
+  border: 2px solid orange;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .location-map-contact-container {
@@ -420,7 +428,8 @@ width: 500px;
 }
 
 .location-cats-list-container {
-
+  border: 2px solid blue;
+  width: 150px;
 }
 
 .location-cats {
@@ -429,7 +438,10 @@ width: 500px;
 
 .location-show-right-container {
   border: 2px solid orange;
-  padding-top: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
 }
 
 .location-show-properties {
