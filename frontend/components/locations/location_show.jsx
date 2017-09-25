@@ -22,8 +22,48 @@ class LocationShow extends React.Component {
     const location = this.state.location;
     if (location) {
     return(
-      <div>
-        {location.location_name}
+      <div className="location-show-container">
+
+        <div className="location-show-subcontainer">
+          <div className="location-show-left-container">
+            <div className="location-show-header-container">
+              <div className="location-show-name">
+                <h3>{location.location_name}</h3>
+              </div>
+              <div className="location-show-rating">
+                <i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div className="location-show-map-cats-container">
+              <div className="location-map-contact-container">
+                <div className="location-map">
+
+                </div>
+                <div className="location-contact">
+                  <p>{location.street_address}</p>
+                  <p>{location.city} {location.state}</p>
+                </div>
+              </div>
+              <div className="location-cats-list-container">
+                <div className="location-cats">
+                  <img src="https://borderlands-books.com/images/bio_ripley.jpg" height="100px" width="100px" />
+                  <p>Ripley</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="location-show-right-container">
+            <div className="location-show-properties">
+              <h3>Location Properties:</h3>
+              <p>Number of cats: {this.state.location.num_cats}</p>
+              <p>Adoptable: false</p>
+              <p>Free: false</p>
+            </div>
+          </div>
+        </div>
       </div>
     )
   } else {

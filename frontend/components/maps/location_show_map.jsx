@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { withRouter } from 'react-router-dom';
 import MarkerManager from '../../util/marker_manager';
 
-class LocationsIndexMap extends React.Component {
+class LocationShowMap extends React.Component {
 
   componentDidMount() {
     // set the map to show SF
@@ -315,11 +315,11 @@ class LocationsIndexMap extends React.Component {
 
   render() {
     return (
-      <div className="location-index-map" ref={ map => this.mapNode = map }>
+      <div className="location-show-map" ref={ map => this.mapNode = map }>
         Map
       </div>
     );
   }
 }
 
-export default withRouter(LocationsIndexMap);
+export default withRouter(LocationShowMap);
