@@ -7,8 +7,9 @@ class LocationShowMap extends React.Component {
 
   componentDidMount() {
     // set the map to show SF
+    debugger;
     const mapOptions = {
-      center: { lat: 37.7758, lng: -122.435 }, // this is SF
+      center: { lat: this.props.showLocation.latitude, lng: this.props.showLocation.longitude },
       zoom: 13,
       styles: [
   {
@@ -307,9 +308,10 @@ class LocationShowMap extends React.Component {
 
 
 
-    // wrap the mapDOMNode in a Google Map
+    // this.props.fetchLocation(this.props.location.id);
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
+    this.MarkerManager.updateMarkers([this.props.showLocation]);
   }
 
 

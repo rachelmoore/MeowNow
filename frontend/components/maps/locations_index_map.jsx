@@ -306,7 +306,7 @@ class LocationsIndexMap extends React.Component {
     };
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
-    this.MarkerManager = new MarkerManager(this.map);
+    this.MarkerManager = new MarkerManager(this.map, this.handleMarkerClick.bind(this));
     let map = this.refs.map;
     this.props.fetchLocations();
     this.MarkerManager.updateMarkers(this.props.locations);
@@ -316,6 +316,9 @@ class LocationsIndexMap extends React.Component {
     this.MarkerManager.updateMarkers(this.props.locations);
   }
 
+  handleMarkerClick(location) {
+    this.props.history.push(`locations/${location.id}`);
+  }
 
   render() {
     return (

@@ -39,7 +39,7 @@ class LocationShow extends React.Component {
             <div className="location-show-map-cats-container">
               <div className="location-map-contact-container">
                 <div className="location-map">
-                  <LocationShowMap />
+                  <LocationShowMap showLocation={location} fetchLocation={this.props.fetchLocation}/>
                 </div>
                 <div className="location-contact">
                   <p>{location.street_address}</p>
