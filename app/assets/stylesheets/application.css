@@ -314,7 +314,7 @@ width: 500px;
   min-width: 400px;
   padding: 20px;
   margin-top: 15px;
-  background-color: #d3d3d3;
+  background-color: #E9E5CA;
 }
 
 .locations-index-item-name {
@@ -368,4 +368,5 @@ width: 500px;
 .location-map {
   width: 500px;
   height: 500px;
+  border: 2px solid black;
 }
