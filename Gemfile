@@ -32,6 +32,7 @@ gem 'binding_of_caller'
 gem 'pry-rails'
 gem 'annotate'
 gem 'jquery-rails'
+gem 'geocoder'
 
 
 # Use Capistrano for deployment

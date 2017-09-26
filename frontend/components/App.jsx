@@ -16,8 +16,7 @@ const App = () => (
   <div>
     <header>
       <AuthRoute exact path="/" component={SessionFormContainer} />
-      <ProtectedRoute exact path="/home" component={GreetingContainer} />
-      <ProtectedRoute exact path="/locations" component={GreetingContainer} />
+      <ProtectedRoute path="/" component={GreetingContainer} />
     </header>
     <main className="main">
       <Route exact path="/" component={HeroContainer} />

@@ -7,7 +7,7 @@ class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      input: ""
+      query: ""
     }
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -15,7 +15,7 @@ class Search extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     console.log(this);
-    this.props.fetchLocations(this.state.input).then(
+    this.props.fetchCity(this.state.query).then(
       () => {
         if (this.props.locations.hash !== "/locations") {
           this.props.history.push("/locations")
@@ -36,7 +36,7 @@ class Search extends React.Component {
         <input type="search"
           className="search-input"
           placeholder="Search by Location"
-          onChange={this.update('input')} />
+          onChange={this.update('query')} />
         <button className="search-button"><i className="fa fa-search fa-2x" aria-hidden="true"></i></button>
       </form>
       </div>

@@ -7,9 +7,8 @@ class LocationsIndexMap extends React.Component {
 
   componentDidMount() {
     // set the map to show SF
-    debugger;
     const mapOptions = {
-      center: { lat: 37.7758, lng: -122.435 }, // this is SF this.props.bounds.geometry.location,
+      center: this.props.bounds, // this is SF this.props.bounds.geometry.location,
       zoom: 13,
       styles: [
   {
@@ -310,8 +309,8 @@ class LocationsIndexMap extends React.Component {
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-    let map = this.refs.map;
-    this.props.fetchLocations();
+    // debugger;
+    // this.map.setBounds(this.props.bounds);
     this.MarkerManager.updateMarkers(this.props.catLocations);
 
   }

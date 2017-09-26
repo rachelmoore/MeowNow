@@ -8,7 +8,7 @@ class LocationsIndex extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchLocations();
+    // this.props.fetchLocations();
   }
 
   render() {
