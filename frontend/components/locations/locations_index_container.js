@@ -1,15 +1,17 @@
 import { connect } from 'react-redux';
 import { fetchLocations } from '../../actions/location_actions';
-// import { allLocations } from '../../reducers/selector';
 import { logout } from '../../actions/session_actions';
 import LocationsIndex from './locations_index';
+import { fetchBounds } from '../../actions/map_actions';
 
 const mapStateToProps = state => ({
-  locations: Object.values(state.locations)
+  locations: Object.values(state.locations),
+  bounds: state.bounds
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchLocations: () => dispatch(fetchLocations())
+  fetchLocations: () => dispatch(fetchLocations()),
+  fetchBounds: (bounds) => dispatch(fetchBounds(bounds))
 });
 
 export default connect(

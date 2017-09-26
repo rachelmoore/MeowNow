@@ -26,7 +26,7 @@ class LocationsIndex extends React.Component {
             </div>
 
             <div className="locations-list-map">
-              <LocationsIndexMap locations={locations} fetchLocations={this.props.fetchLocations}/>
+              <LocationsIndexMap catLocations={locations} fetchLocations={this.props.fetchLocations} bounds={this.props.bounds}/>
             </div>
 
           </div>

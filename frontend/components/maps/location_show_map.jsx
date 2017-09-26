@@ -7,7 +7,6 @@ class LocationShowMap extends React.Component {
 
   componentDidMount() {
     // set the map to show SF
-    debugger;
     const mapOptions = {
       center: { lat: this.props.showLocation.latitude, lng: this.props.showLocation.longitude },
       zoom: 13,
