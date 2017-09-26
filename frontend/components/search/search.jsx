@@ -1,6 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
+
+
 class Search extends React.Component {
   constructor(props) {
     super(props);
@@ -12,6 +14,7 @@ class Search extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    console.log(this);
     this.props.fetchLocations(this.state.input).then(
       () => {
         if (this.props.locations.hash !== "/locations") {
