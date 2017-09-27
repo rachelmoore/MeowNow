@@ -22,6 +22,12 @@ class ReviewForm extends React.Component {
         this.setState({body: ""});
     }
 
+    update(field) {
+        return (e) => this.setState({
+            [field]: e.currentTarget.value
+        });
+    }
+
     render() {
         return (
             <div className="review-form-container">

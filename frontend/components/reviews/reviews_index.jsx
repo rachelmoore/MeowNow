@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ReviewsIndexContainer from './reviews_index_container';
+import ReviewFormContainer from './review_form_container';
 
 class ReviewsIndex extends React.Component {
     componentDidMount() {
@@ -31,6 +31,18 @@ class ReviewsIndex extends React.Component {
                     </button>
                 );
             }
+        }
+    }
+
+    displayForm() {
+        if (!this.props.currentUser) {
+            return (
+                <p>Log In to Review</p>
+            );
+        } else {
+            return (
+                <ReviewFormContainer />
+            );
         }
     }
 
@@ -72,6 +84,9 @@ class ReviewsIndex extends React.Component {
                     ))}
                    
                 </ul>
+                <div className="displayForm">
+                    {this.displayForm()}
+                </div>
             </div>
         );
     }

@@ -3,8 +3,7 @@ import { connect } from 'react-redux';
 import ReviewForm from './review_form';
 
 const mapStateToProps = (state, ownProps) => ({
-    currentUser: state.session.currentUser, 
-    userId: state.session.currentUser.id
+    currentUser: state.session.currentUser
 });
 
 const mapDispatchToProps = dispatch => ({
