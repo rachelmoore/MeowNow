@@ -12,4 +12,14 @@
 #
 
 class Review < ApplicationRecord
+    belongs_to :author, 
+    primary_key: :id,
+    foreign_key: :author_id, 
+    class_name: :User
+    
+    belongs_to :location, 
+    primary_key: :id, 
+    foreign_key: :location_id, 
+    class_name: :Location
+
 end

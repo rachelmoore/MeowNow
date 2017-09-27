@@ -17,4 +17,10 @@
 #
 
 class Location < ApplicationRecord
+
+    has_many :reviews, 
+    primary_key: :id,
+    foreign_key: :location_id, 
+    class_name: :Review
+
 end
