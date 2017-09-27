@@ -1,2 +1,0 @@
-json.extract! review, :id, :location_id, :user_id, :body, :rating
-json.date "#{review.updated_at.month}/#{review.updated_at.day}/#{review.updated_at.year}"

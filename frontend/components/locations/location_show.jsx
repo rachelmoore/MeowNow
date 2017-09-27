@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LocationShowMap from '../maps/location_show_map';
+import ReviewsIndexContainer from '../reviews/reviews_index_container';
+import ReviewFormContainer from '../reviews/review_form_container';
 
 class LocationShow extends React.Component {
   constructor(props) {
@@ -64,6 +66,10 @@ class LocationShow extends React.Component {
               <p>Free: false</p>
             </div>
           </div>
+        </div>
+        <div className="location-show-reviews-container">
+          <ReviewsIndexContainer locationId={this.props.locationId}/> 
+          
         </div>
       </div>
     )

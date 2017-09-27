@@ -6,19 +6,19 @@ export const RECEIVE_SINGLE_REVIEW = 'RECEIVE_SINGLE_REVIEW';
 export const REMOVE_REVIEW = 'REMOVE_REVIEW';
 
 export const getReviews = (id) => dispatch => (
-    ApiUtil.getReviews(id).then(reviews => dispatch(RECEIVE_ALL_REVIEWS(reviews)))
+    ApiUtil.getReviews(id).then(reviews => dispatch(receiveAllReviews(reviews)))
 );
 
 export const createReview = (review) => dispatch => (
-    ApiUtil.createReview(review).then(review => dispatch(receiveSingleReview(review)))
+    ApiUtil.createReview(review).then(thisReview => dispatch(receiveSingleReview(thisReview)))
 );
 
 export const updateReview = (review) => dispatch => (
-    ApiUtil.updateReview(review).then(review => dispatch(receiveAllReviews(review)))
+    ApiUtil.updateReview(review).then(thisReview => dispatch(receiveAllReviews(thisReview)))
 );
 
 export const deleteReview = (review) => dispatch => (
-    ApiUtil.deleteReview(review).then(review => dispatch(removeReview(review)))
+    ApiUtil.deleteReview(review).then(thisReview => dispatch(removeReview(thisReview)))
 );
 
 export const receiveAllReviews = reviews => ({

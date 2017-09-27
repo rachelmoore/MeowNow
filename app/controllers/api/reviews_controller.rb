@@ -16,6 +16,7 @@ class Api::ReviewsController < ApplicationController
 
   def index
     @reviews = Location.find_by(id: params[:location_id]).reviews
+    p @reviews
   end
 
   def edit
@@ -42,7 +43,7 @@ class Api::ReviewsController < ApplicationController
 private
 
   def review_params
-    params.require(:review).permit(:location_id, :user_id, :body, :rating)
+    params.require(:review).permit(:location_id, :author_id, :body, :rating)
   end
 
 

@@ -1,10 +1,10 @@
-import merge from 'lodash-merge';
-import { RECEIVE_REVIEWS, RECEIVE_SINGLE_REVIEW, REMOVE_REVIEW } from '../actions/review_actions';
+import { merge } from 'lodash';
+import { RECEIVE_ALL_REVIEWS, RECEIVE_SINGLE_REVIEW, REMOVE_REVIEW } from '../actions/review_actions';
 
 const ReviewReducer = (state = {}, action) => {
     Object.freeze(state);
     switch(action.type) {
-        case RECEIVE_REVIEWS:
+        case RECEIVE_ALL_REVIEWS:
             return action.reviews;
         case RECEIVE_SINGLE_REVIEW:
             let newState = merge({}, state);
