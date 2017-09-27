@@ -44,10 +44,6 @@ class ReviewForm extends React.Component {
                             </button>
                         </div>
 
-                        {/* <div className="errors-container">
-                            <center>{this.renderErrors()}</center>
-                        </div> */}
-
                     </div>
 
                 </form>
@@ -57,5 +53,9 @@ class ReviewForm extends React.Component {
     }
 }
 
-export default ReviewForm;
+{/* <div className="errors-container">
+    <center>{this.renderErrors()}</center>
+</div>  */}
+
+export default withRouter(ReviewForm);
 
