@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { fetchLocations } from '../../actions/location_actions';
 import { logout } from '../../actions/session_actions';
 import LocationsIndex from './locations_index';
-import { fetchBounds } from '../../actions/map_actions';
+import { fetchBounds, updateBounds } from '../../actions/map_actions';
 
 const mapStateToProps = state => ({
   locations: Object.values(state.locations),
@@ -11,7 +11,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchLocations: () => dispatch(fetchLocations()),
-  fetchBounds: (bounds) => dispatch(fetchBounds(bounds))
+  fetchBounds: (bounds) => dispatch(fetchBounds(bounds)), 
+  updateBounds: (bounds) => dispatch(updateBounds(bounds))
 });
 
 export default connect(

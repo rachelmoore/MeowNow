@@ -26,7 +26,7 @@ const LocationsIndexItem = ({ location }) => {
         </div>
       </div>
     </li>
-  )
-}
+  );
+};
 
 export default LocationsIndexItem;

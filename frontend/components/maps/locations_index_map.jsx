@@ -309,15 +309,36 @@ class LocationsIndexMap extends React.Component {
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-    // debugger;
-    // this.map.setBounds(this.props.bounds);
+    // this._registerListeners();
     this.MarkerManager.updateMarkers(this.props.catLocations);
+
+    this.map.addListener('bounds_changed', () => {
+      const { north, south, east, west } = this.map.getBounds().toJSON();
+      const newBounds = {
+        northEast: { lat:north, lng: east },
+        southWst: { lat: south, lng: west }
+        };
+      this.props.updateBounds(newBounds);
+      this.MarkerManager.updateMarkers(this.props.catLocations);
+    });
 
   }
 
   componentDidUpdate() {
     this.MarkerManager.updateMarkers(this.props.catLocations);
   }
+
+  // _registerListeners() {
+  //   google.maps.event.addListener(this.map, 'idle', () => {
+  //     const { north, south, east, west } = this.map.getBounds().toJSON();
+  //     const bounds = {
+  //       northEast: { lat:north, lng: east },
+  //       southWst: { lat: south, lng: west } };
+  //     this.props.changeBounds(bounds: bounds);
+  //   });
+  // }
+
+
 
 
   render() {

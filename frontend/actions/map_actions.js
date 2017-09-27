@@ -7,12 +7,15 @@ export const RECEIVE_BOUNDS = 'RECEIVE_BOUNDS';
 export const fetchCity = query => dispatch => (
   ApiUtil.fetchCity(query).then(geocodeData => dispatch(fetchLocations(geocodeData))
                             .then(() => dispatch(receiveBounds(geocodeData.results[0].geometry.location))) )
-)
+);
 
+export const updateBounds = (bounds) => dispatch => (
+ dispatch(fetchLocations(bounds)).then(() => dispatch(receiveBounds(bounds)))
+);
 // dispatch(receiveBounds(geocodeData.data.result[0].geometry.bounds)))
 // [:data][:results]["0"][:geometry][:bounds]
 
 export const receiveBounds = bounds => ({
   type: RECEIVE_BOUNDS,
   bounds: bounds
-})
+});

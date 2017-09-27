@@ -3,8 +3,8 @@ import * as ApiUtil from '../util/locations_api_util';
 export const RECEIVE_LOCATIONS = 'RECEIVE_LOCATIONS';
 export const RECEIVE_LOCATION = 'RECEIVE_LOCATION';
 
-export const fetchLocations = (query) => dispatch => (
-  ApiUtil.fetchLocations(query).then(locations => dispatch(receiveLocations(locations)))
+export const fetchLocations = (geocodeData) => dispatch => (
+  ApiUtil.fetchLocations(geocodeData).then(locations => dispatch(receiveLocations(locations)))
 );
 
 export const fetchLocation = (id) => dispatch => (
