@@ -7,7 +7,8 @@ class ReviewForm extends React.Component {
         this.state = { 
             location_id: this.props.match.params.locationId, 
             author_id: this.props.currentUser.id, 
-            body: ""
+            body: "", 
+            rating: 5
         };
         this.handleSubmit = this.handleSubmit.bind(this);
         this.update = this.update.bind(this);

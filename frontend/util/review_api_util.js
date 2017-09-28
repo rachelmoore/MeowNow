@@ -9,7 +9,7 @@ export const createReview = (review) => (
     $.ajax({
         method: 'POST', 
         url: `api/locations/${review.location_id}/reviews`, 
-        data: { review }
+        data: review 
     })
 );
 
