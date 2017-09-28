@@ -342,7 +342,7 @@ class LocationsIndexMap extends React.Component {
 
   locationMarker(catLocation) {
     let infowindow = new google.maps.InfoWindow({
-      content: `<b>${catLocation.location_name}</b><br>
+      content: `<a href=/#/locations/${catLocation.id}>${catLocation.location_name}</a><br>
                 ${catLocation.street_address}<br>
                 ${catLocation.city}, ${catLocation.state}`
     });
