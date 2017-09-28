@@ -17,13 +17,13 @@ export const updateReview = (review) => (
     $.ajax({
         method: 'PATCH', 
         url: `api/gyms/${review.location_id}/reviews/${review.id}`,
-        data: { review }
+        data:  review 
     })
 );
 
 export const deleteReview = (review) => (
     $.ajax({
         method: 'DELETE', 
-        url: `api/reviews/${review.id}`
+        url: `api/locations/${review.location_id}/reviews/${review.id}`
     })
 );

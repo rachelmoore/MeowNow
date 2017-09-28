@@ -3,6 +3,12 @@ import { Link } from 'react-router-dom';
 import ReviewFormContainer from './review_form_container';
 
 class ReviewsIndex extends React.Component {
+    constructor(props) {
+        super(props);
+        this.deleteReview = this.deleteReview.bind(this);
+        // this.updateReview = this.updateReview.bind(this);
+    }
+
     componentDidMount() {
         // const locationId = this.props.location.id;
         console.log(this.props);
@@ -14,7 +20,7 @@ class ReviewsIndex extends React.Component {
         if (this.props.currentUser) {
             if (this.props.currentUser.id === review.author_id) {
                 return (
-                    <button onClick={() => this.deleteReview(review.id)} className="delete-review-button">
+                    <button onClick={() => this.deleteReview(review)} className="delete-review-button">
                         Delete Review
                     </button>
                 );
@@ -69,18 +75,22 @@ class ReviewsIndex extends React.Component {
                                     <div className="comment-body">
                                         {review.body}
                                     </div>
-                                    <h4 className="review-username">
-                                        {review.author.username}
-                                    </h4>
-                                </div>
-                                <div className="review-buttons">
-                                    <div className="delete-review">
-                                        {this.deleteReviewButton(review)}
-                                    </div> 
-                                    <div className="edit-review">
-                                        {this.updateReviewButton(review)}
+                                    <div className="review-username-and-buttons">
+                                        <div className="review-username-container">
+                                            <h4 className="review-username">
+                                                {review.author.username}
+                                            </h4>
+                                        </div>
+                                        <div className="review-buttons">
+                                            <div className="delete-review">
+                                                {this.deleteReviewButton(review)}
+                                            </div>
+                                            <div className="edit-review">
+                                                {this.updateReviewButton(review)}
+                                            </div>
+                                        </div> 
                                     </div>
-                                </div> 
+                                </div>
                             </li>
                         ))}
                     
