@@ -35,7 +35,7 @@ class Search extends React.Component {
       <form className="search-form" onSubmit={ this.handleSubmit }>
         <input type="search"
           className="search-input"
-          placeholder="Search by Location"
+          placeholder="Search by City"
           onChange={this.update('query')} />
         <button className="search-button"><i className="fa fa-search fa-2x" aria-hidden="true"></i></button>
       </form>
