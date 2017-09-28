@@ -65,7 +65,7 @@ class LocationShow extends React.Component {
             <div className="location-cats">
               <center><p className="featured-cat-text">Featured Cat:</p></center>
               <img src="https://borderlands-books.com/images/bio_ripley.jpg" className="featured-cat" />
-              <center><p>Ripley</p></center>
+              <center><p className="cat-name-text">Ripley</p></center>
             </div>
           </div>
         </div>
