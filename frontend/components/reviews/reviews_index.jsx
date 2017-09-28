@@ -43,11 +43,23 @@ class ReviewsIndex extends React.Component {
     displayForm() {
         if (!this.props.currentUser) {
             return (
-                <p>Log In to Review</p>
+                <div>
+                    <center>
+                        <hr className="paw-hr" />
+                    </center> 
+                    <div className="log-in-to-review">
+                        <p>Log In to Review</p>
+                    </div>
+                </div>
             );
         } else {
             return (
-                <ReviewFormContainer authorId={this.props.currentUser.id} locationId={this.props.locationId}/>
+                <div>
+                    <center>
+                        <hr className="paw-hr" />
+                    </center>
+                    <ReviewFormContainer authorId={this.props.currentUser.id} locationId={this.props.locationId}/>
+                </div>
             );
         }
     }

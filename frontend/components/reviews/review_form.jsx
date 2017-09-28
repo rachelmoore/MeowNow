@@ -32,10 +32,10 @@ class ReviewForm extends React.Component {
             <div className="review-form-container">
                 <form className="review-form-box" onSubmit={this.handleSubmit}>
 
-                    <div className="login-form">
+                    <div className="review-form">
 
-                        <label>Body
-                             <input type="text"
+                        <label><p className="review-label"><u>Leave new review:</u></p>
+                             <textarea
                                 className="review-input"
                                 placeholder="Your review here"
                                 onChange={this.update('body')}
@@ -43,8 +43,8 @@ class ReviewForm extends React.Component {
                                 />
                         </label>
 
-                        <div className="review-button-container">
-                            <button className="review-button" onClick={this.handleSubmit}>
+                        <div className="review-submit-button-container">
+                            <button className="review-submit-button" onClick={this.handleSubmit}>
                                 Submit Review
                             </button>
                         </div>

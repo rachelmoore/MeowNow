@@ -72,13 +72,13 @@ body {
 .signup-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
   cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
-  background-color: #F3F315;
+  background-color: #E4CB72;
 }
 
 .login-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
   cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
-  background-color: #F3F315;
+  background-color: #E4CB72;
 }
 
  .modal-form-container {
@@ -120,7 +120,7 @@ body {
 .modal-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
   cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
-  background-color: #F3F315;
+  background-color: #E4CB72;
 }
 
 .modal-button {
@@ -171,7 +171,7 @@ body {
 .logout-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
   cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
-  background-color: #F3F315;
+  background-color: #E4CB72;
 }
 
 
@@ -269,7 +269,7 @@ width: 500px;
 .search-button:hover {
   box-shadow: 0 0 11px rgba(33,33,33,.2);
   cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
-  background-color: #F3F315;
+  background-color: #E4CB72;
 }
 
 .fa-search {
@@ -331,8 +331,8 @@ width: 500px;
 }
 
 .locations-index-item-name-link:hover {
-  text-shadow: #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,
-    #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px,   #F3F315 0px 0px 1px;
+  text-shadow: #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px,
+    #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -649,3 +649,92 @@ width: 500px;
   border-radius: 5px;
   background-color: #E9E5CA;
 }
+
+.log-in-to-review {
+  margin-left: 25px;
+  margin-top: 20px;
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  
+}
+
+.reviews-hr {
+  border-top: 2px solid #2e2e2e;
+  width: 550px;
+}
+
+/* Review Form */
+
+.review-form-container {
+
+}
+
+.review-form-box {
+
+}
+
+.login-form {
+
+}
+
+.review-form {
+  margin: 20px;
+}
+
+.review-label {
+  margin-top: 10px;
+}
+
+.review-input {
+  width: 300px;
+  height: 120px;
+  border: 4px solid #A5B077;
+  color: #333;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.review-submit-button-container {
+  margin-top: 10px;
+}
+
+.review-submit-button {
+  margin-left: 5px;
+  margin-right: 5px;
+  min-height: 20px;
+  color: #2e2e2e;
+  background-color: #FFFFFF;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.review-submit-button:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+  cursor: url('http://hellahoops.com/smallestestpaw.ico'), default;
+  background-color: #E4CB72;
+}
+
+.paw-hr {
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  height: 2px;
+  text-align: center;
+  width: 600px;
+}
+
+/* .paw-hr:after {
+	  font-family:'FontAwesome';
+    content: '\xf1b0';  
+    display: inline-block;
+    position: relative; 
+    top: -0.7em;  
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: transparent;
+} */
