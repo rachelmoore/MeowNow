@@ -41,7 +41,7 @@ class ReviewsIndex extends React.Component {
             );
         } else {
             return (
-                <ReviewFormContainer />
+                <ReviewFormContainer authorId={this.props.currentUser.id} locationId={this.props.locationId}/>
             );
         }
     }

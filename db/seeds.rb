@@ -30,8 +30,10 @@ Location.create(location_name: 'Flora Grubb Gardens', street_address: '1634 Jerr
 
 User.create(username: "Rachel", password: "123456")
 User.create(username: "Guest", password: "password")
+User.create(username: "kittyl0v3", password: "password")
 
 Review.create(author_id: 1, location_id: 1, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)
+Review.create(author_id: 3, location_id: 1, body: "My daughter and I love stopping by this little bookstore to pet Owen the cat. He's very gentle and patient with children. The discount books are a bonus. :)", rating: 5)
 Review.create(author_id: 1, location_id: 2, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)
 Review.create(author_id: 1, location_id: 3, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)
 Review.create(author_id: 1, location_id: 4, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)

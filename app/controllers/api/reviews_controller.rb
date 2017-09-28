@@ -16,7 +16,6 @@ class Api::ReviewsController < ApplicationController
 
   def index
     @reviews = Location.find_by(id: params[:location_id]).reviews
-    p @reviews
   end
 
   def edit

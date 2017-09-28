@@ -5,8 +5,8 @@ class ReviewForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            location_id: null, 
-            user_id: null, 
+            location_id: this.props.match.params.locationId, 
+            author_id: this.props.currentUser.id, 
             body: ""
         };
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -16,8 +16,6 @@ class ReviewForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const review = this.state;
-        review.location_id = this.props.locationId;
-        review.user_id = this.props.userId;
         this.props.createReview({ review });
         this.setState({body: ""});
     }
@@ -39,7 +37,7 @@ class ReviewForm extends React.Component {
                              <input type="text"
                                 className="review-input"
                                 placeholder="Your review here"
-                                onChange={this.update('username')}
+                                onChange={this.update('body')}
                                 value={this.state.body}
                                 />
                         </label>
