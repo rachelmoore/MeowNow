@@ -29,6 +29,7 @@ Location.create(location_name: 'Flora Grubb Gardens', street_address: '1634 Jerr
 
 
 User.create(username: "Rachel", password: "123456")
+User.create(username: "Guest", password: "password")
 
 Review.create(author_id: 1, location_id: 1, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)
 Review.create(author_id: 1, location_id: 2, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)

@@ -14,6 +14,7 @@ class SessionForm extends React.Component {
       formType: "Log In"
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.handleDemoSubmit = this.handleDemoSubmit.bind(this);
     this.update = this.update.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
@@ -51,6 +52,11 @@ class SessionForm extends React.Component {
     } else {
       this.props.signup(user);
     }
+  }
+
+  handleDemoSubmit(e) {
+    e.preventDefault();
+    this.props.demoLogin();
   }
 
   renderErrors() {
@@ -115,7 +121,7 @@ class SessionForm extends React.Component {
                   <button className="modal-button" onClick={this.handleSubmit}>
                     {this.modalButton()}
                   </button>
-                  <button className="modal-button" onClick={this.handleSubmit}>
+                  <button className="modal-button" onClick={this.handleDemoSubmit}>
                     Demo Login
                   </button>
                 </div>
