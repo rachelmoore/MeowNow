@@ -66,12 +66,12 @@ class ReviewsIndex extends React.Component {
                         {this.props.reviews.map((review, idx) => (
                             <li className="review-container">
                                 <div className="review">
-                                    <h4 className="review-username">
-                                        {review.author.username}
-                                    </h4>
                                     <div className="comment-body">
                                         {review.body}
                                     </div>
+                                    <h4 className="review-username">
+                                        {review.author.username}
+                                    </h4>
                                 </div>
                                 <div className="review-buttons">
                                     <div className="delete-review">
