@@ -48,22 +48,24 @@ class LocationShow extends React.Component {
                   <p>{location.city} {location.state}</p>
                 </div>
               </div>
-              <div className="location-cats-list-container">
-                <div className="location-cats">
-                  <img src="https://borderlands-books.com/images/bio_ripley.jpg" height="100px" width="100px" />
-                  <p>Ripley</p>
+              <div className="location-show-right-container">
+                <div className="location-show-properties">
+                  <h3>Location Properties:</h3>
+                  <p>Number of cats: {this.state.location.num_cats}</p>
+                  <p>Adoptable: false</p>
+                  <p>Free: false</p>
                 </div>
+                
               </div>
             </div>
 
           </div>
 
-          <div className="location-show-right-container">
-            <div className="location-show-properties">
-              <h3>Location Properties:</h3>
-              <p>Number of cats: {this.state.location.num_cats}</p>
-              <p>Adoptable: false</p>
-              <p>Free: false</p>
+          <div className="location-cats-list-container">
+            <div className="location-cats">
+              <center><p className="featured-cat-text">Featured Cat:</p></center>
+              <img src="https://borderlands-books.com/images/bio_ripley.jpg" className="featured-cat" />
+              <center><p>Ripley</p></center>
             </div>
           </div>
         </div>

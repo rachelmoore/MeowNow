@@ -428,20 +428,41 @@ width: 500px;
 }
 
 .location-cats-list-container {
-  border: 2px solid blue;
-  width: 150px;
-}
-
-.location-cats {
-
-}
-
-.location-show-right-container {
   border: 2px solid orange;
   padding: 10px;
   margin-top: 15px;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
+  background-color: #E9E5CA;
+}
+
+/* Polaroid CSS from Paul Underwood: https://paulund.co.uk/create-polaroid-image-with-css */
+
+.featured-cat {
+  height: 170px;
+  width: 170px;
+  background: white;
+	display: inline;
+	float: left;
+	margin: 0 15px 30px;
+	padding: 10px 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	transition: all .15s linear;
+	z-index:0;
+        position:relative;
+}
+
+.location-show-right-container {
+  border: 2px solid blue;
+  width: 250px;
+  display: flex;
+  justify-content: center;
 }
 
 .location-show-properties {
@@ -461,4 +482,53 @@ width: 500px;
   height: 500px;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
+}
+
+
+/* Reviews Index */
+
+.reviews-list-container {
+   border: 2px solid #2e2e2e;
+  border-radius: 5px;
+}
+
+.reviews-list-container {
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+}
+
+.reviews-list {
+  
+}
+
+.review-container {
+
+}
+
+.review {
+
+}
+
+.review-username {
+
+}
+
+.comment-body {
+
+}
+
+.review-buttons {
+
+}
+
+.delete-review {
+
+}
+
+.edit-review {
+
+}
+
+.display-form {
+
 }

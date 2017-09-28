@@ -60,32 +60,37 @@ class ReviewsIndex extends React.Component {
             );
         }
         return(
-            <div className="reviews-list-container"> 
-                <ul className="reviews-list">
-                    {this.props.reviews.map((review, idx) => (
-                        <li className="review-container">
-                            <div className="review">
-                                <h4 className="review-username">
-                                    {review.author.username}
-                                </h4>
-                                <div className="comment-body">
-                                    {review.body}
+            <div className="reviews-index-container"> 
+                <div className="reviews-list-container"> 
+                    <ul className="reviews-list">
+                        {this.props.reviews.map((review, idx) => (
+                            <li className="review-container">
+                                <div className="review">
+                                    <h4 className="review-username">
+                                        {review.author.username}
+                                    </h4>
+                                    <div className="comment-body">
+                                        {review.body}
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="review-buttons">
-                                <div className="delete-review">
-                                    {this.deleteReviewButton(review)}
+                                <div className="review-buttons">
+                                    <div className="delete-review">
+                                        {this.deleteReviewButton(review)}
+                                    </div> 
+                                    <div className="edit-review">
+                                        {this.updateReviewButton(review)}
+                                    </div>
                                 </div> 
-                                <div className="edit-review">
-                                    {this.updateReviewButton(review)}
-                                </div>
-                            </div> 
-                        </li>
-                    ))}
-                   
-                </ul>
-                <div className="displayForm">
-                    {this.displayForm()}
+                            </li>
+                        ))}
+                    
+                    </ul>
+                    <div className="displayForm">
+                        {this.displayForm()}
+                    </div>
+                </div>
+                <div className="reviews-location-info-container">
+                    Placeholder
                 </div>
             </div>
         );
