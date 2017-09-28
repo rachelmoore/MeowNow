@@ -428,6 +428,7 @@ width: 500px;
 }
 
 .location-cats-list-container {
+  width: 240px;
   border: 2px solid orange;
   padding: 10px;
   margin-top: 15px;
@@ -506,14 +507,27 @@ width: 500px;
 
 /* Reviews Index */
 
+.reviews-index-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  border: 2px solid yellow;
+}
+
 .reviews-list-container {
    border: 2px solid #2e2e2e;
   border-radius: 5px;
 }
 
 .reviews-list-container {
+  display: flex;
+  flex-direction: column;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
+  max-width: 600px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: #E9E5CA;
 }
 
 .reviews-list {
@@ -550,4 +564,14 @@ width: 500px;
 
 .display-form {
 
+}
+
+.reviews-location-info-container {
+  width: 240px;
+  border: 2px solid orange;
+  padding: 10px;
+  margin-top: 15px;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+  background-color: #E9E5CA;
 }
