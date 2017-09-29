@@ -26,6 +26,11 @@ I wanted MeowNow.io to have a stark overall look with increasingly playful/hapha
 * #F76058 - red orange
 * #EBE3CD - neutral
 
+## Homepage and Modal login 
+
+![](http://res.cloudinary.com/df9oqycdp/image/upload/v1506720858/Screen_Shot_2017-09-29_at_1.35.31_PM_dmww2v.png)
+![](http://res.cloudinary.com/df9oqycdp/image/upload/v1506720859/Screen_Shot_2017-09-29_at_1.35.46_PM_tjhrup.png)
+
 ## Search
 
 The React magic happens in my LocationsIndexMap React component. When I create a map, `mapOptions` are passed in to style the map. I initialize with SF bounds but no matter what the search is it will render the map based on the search query even if no 'cat locations' exist there. 
@@ -58,7 +63,7 @@ The markers and locations index data update when the bounds change via the event
 
 ## Random Location Cat Generator
 
-![Search](http://res.cloudinary.com/df9oqycdp/image/upload/v1506720748/catsgenerator_folvhi.gif)
+![Search](http://res.cloudinary.com/df9oqycdp/image/upload/v1506720739/catgenerator_xgqbbz.gif)
 
 ## Future Directions for the Project
 
