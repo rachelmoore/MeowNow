@@ -62,8 +62,8 @@ The markers and locations index data update when the bounds change via the event
       this.props.updateBounds(newBounds);
       this.MarkerManager.updateMarkers(this.props.catLocations);
       this.props.catLocations.forEach(catLocation => this.locationMarker(catLocation));
-    });`
-}
+    });
+}`
 
 ## Locations List Page
 
