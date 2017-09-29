@@ -5,7 +5,7 @@ json.extract! location,
                       :city,
                       :state,
                       :phone, 
-                      :website
+                      :website,
                       :latitude,
                       :longitude,
                       :num_cats,

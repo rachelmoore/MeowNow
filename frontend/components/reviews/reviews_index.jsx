@@ -96,9 +96,6 @@ class ReviewsIndex extends React.Component {
                                             <div className="delete-review">
                                                 {this.deleteReviewButton(review)}
                                             </div>
-                                            <div className="edit-review">
-                                                {this.updateReviewButton(review)}
-                                            </div>
                                         </div> 
                                     </div>
                                 </div>
@@ -124,5 +121,9 @@ class ReviewsIndex extends React.Component {
     }
 
 }
+
+{/* <div className="edit-review">
+    {this.updateReviewButton(review)}
+</div> */}
 
 export default ReviewsIndex;

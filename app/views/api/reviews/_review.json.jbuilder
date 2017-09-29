@@ -1,2 +1,4 @@
 json.extract! review, :id, :location_id, :author_id, :body, :rating
-json.set! :author, review.author.username
+json.author do  
+    json.extract! review.author, :username
+end 
