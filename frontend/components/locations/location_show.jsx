@@ -40,7 +40,7 @@ class LocationShow extends React.Component {
           <div className="location-show-subcontainer">
             <div className="location-show-left-container">
               <div className="location-show-header-container">
-                <div>
+                <div className="location-show-name-stars">
                 <div className="location-show-name">
                   <h3>{location.location_name}</h3>
                 </div>
@@ -58,6 +58,8 @@ class LocationShow extends React.Component {
                   <div className="location-contact">
                     <p>{location.street_address}</p>
                     <p>{location.city} {location.state}</p>
+                    <br /> 
+                    <p>{location.phone}</p>
                   </div>
                 </div>
                 <div className="location-show-right-container">

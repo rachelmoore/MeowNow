@@ -107,14 +107,7 @@ class ReviewsIndex extends React.Component {
                         {this.displayForm()}
                     </div>
                 </div>
-                <div className="reviews-location-info-container">
-                    <div className="reviews-location-info-text">
-                        <h3 className="location-properties-header">Location Properties:</h3>
-                        <p>Number of cats: 3</p>
-                        <p>Adoptable: false</p>
-                        <p>Free: false</p>
-                    </div>
-                </div>
+                
                 </div>
             </div>
         );
@@ -124,6 +117,15 @@ class ReviewsIndex extends React.Component {
 
 {/* <div className="edit-review">
     {this.updateReviewButton(review)}
+</div> */}
+
+{/* <div className="reviews-location-info-container">
+    <div className="reviews-location-info-text">
+        <h3 className="location-properties-header">Location Properties:</h3>
+        <p>Number of cats: 3</p>
+        <p>Adoptable: false</p>
+        <p>Free: false</p>
+    </div>
 </div> */}
 
 export default ReviewsIndex;
