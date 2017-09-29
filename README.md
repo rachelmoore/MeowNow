@@ -67,6 +67,18 @@ The markers and locations index data update when the bounds change via the event
 
 ![RandomCatGenerator](http://res.cloudinary.com/df9oqycdp/image/upload/v1506721141/catsgenerator-min_rwqtl8.gif)
 
+## Built With 
+
+* Heroku
+* Ruby On Rails
+* jBuilder
+* PostgreSQL
+* React/Redux
+* JavaScript
+* CSS
+* npm
+* Webpack
+
 ## Future Directions for the Project
 
 * Users can add locations to the database for admin vetting.
