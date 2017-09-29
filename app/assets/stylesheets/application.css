@@ -301,7 +301,7 @@ padding-left: 10px;
   display: flex;
   justify-content: space-around;
   background-color: #FFFFFF;
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
 
 }
 
@@ -310,7 +310,7 @@ padding-left: 10px;
 }
 
 .locations-list-map {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   padding-top: 10px;
 }
 
@@ -328,8 +328,9 @@ padding-left: 10px;
 }
 
 .locations-index-item-name {
-  border: 2px solid purple;
-  padding-bottom: 10px;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
+  padding: 3px;
 }
 
 .locations-index-item-name-link {
@@ -348,19 +349,26 @@ padding-left: 10px;
 }
 
 .locations-index-item-info {
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .locations-index-item-photo {
+  margin: 10px;
+}
 
+.location-img-url {
+ border: 2px solid #2e2e2e;
+ border-radius: 5px;
 }
 
 .locations-index-item-details-container {
-  border: 2px solid blue;
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
   width: 150px;
+  margin-top: 5px;
 }
 
 .locations-index-item-details {

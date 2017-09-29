@@ -14,7 +14,7 @@ const LocationsIndexItem = ({ location }) => {
 
         <div className="locations-index-item-info">
           <div className="locations-index-item-photo">
-            <img src={location.img_url} height="100px" width="100px" />
+            <img className="location-img-url" src={location.img_url} height="150px" width="150px" />
           </div>
           <div className="locations-index-item-details-container">
             <div className="locations-index-item-details">
