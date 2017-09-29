@@ -33,7 +33,7 @@ I wanted MeowNow.io to have a stark overall look with increasingly playful/hapha
 
 ## Search
 
-![](http://res.cloudinary.com/df9oqycdp/image/upload/v1506721791/CAAAATS-min_ovrb9t.gif)
+![](http://res.cloudinary.com/df9oqycdp/image/upload/v1506721989/FINALCATSSEARCH-min_dkiyey.gif)
 
 The React magic happens in my LocationsIndexMap React component. When I create a map, `mapOptions` are passed in to style the map. I initialize with SF bounds but no matter what the search is it will render the map based on the search query even if no 'cat locations' exist there. 
 
