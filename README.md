@@ -1,7 +1,6 @@
 # MeowNow
 
-![GitHub Logo](http://res.cloudinary.com/df9oqycdp/image/upload/v1506718564/catfacedoodle_etknl9.png)
-Format: ![Alt Text](url)
+![MeowNow](http://res.cloudinary.com/df9oqycdp/image/upload/v1506718564/catfacedoodle_etknl9.png)
 
 See [MeowNow.io](https://meownowdotio.herokuapp.com/#/ "MeowNow.io") in action!
 
