@@ -18,8 +18,8 @@ const ModalStyling = {
     border          : '2px solid #2e2e2e',
     padding         : '20px',
     zIndex          : 11,
-    backgroundColor : '#d3d3d3' 
+    backgroundColor : '#d3d3d3'
   }
-}
+};
 
 export default ModalStyling;

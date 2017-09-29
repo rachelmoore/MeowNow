@@ -40,11 +40,13 @@ class LocationShow extends React.Component {
           <div className="location-show-subcontainer">
             <div className="location-show-left-container">
               <div className="location-show-header-container">
+                <div>
                 <div className="location-show-name">
                   <h3>{location.location_name}</h3>
                 </div>
                 <div className="location-show-rating">
                   <i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i>
+                </div>
                 </div>
               </div>
 
@@ -60,13 +62,8 @@ class LocationShow extends React.Component {
                 </div>
                 <div className="location-show-right-container">
                   <div className="corkboard">
-                    <div className="location-show-post-it">
-                      <p>Number of cats: 3</p>
-                      <p>Adoptable: false</p>
-                      <p>Free: false</p>
-                    </div>
+                    <p className="featured-cat-text">Featured Cat:</p>
                     <div className="location-cats">
-                      <center><p className="featured-cat-text">Featured Cat:</p></center>
                       <div className="featured-cat-img-container">
                         <img src={cat.img_url} className="featured-cat" />
                         <center><p className="cat-name-text">{cat.name}</p></center>
