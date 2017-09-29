@@ -368,6 +368,7 @@ padding-left: 10px;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
   width: 150px;
+  height: 120px;
   margin-top: 5px;
 }
 
@@ -375,6 +376,7 @@ padding-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 5px;
 }
 
 .locations-index-item-rating {

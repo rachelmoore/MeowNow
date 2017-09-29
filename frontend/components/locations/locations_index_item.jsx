@@ -20,7 +20,9 @@ const LocationsIndexItem = ({ location }) => {
             <div className="locations-index-item-details">
             <div className="locations-index-item-rating"><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i><i className="fa fa-star fa-1x" aria-hidden="true"></i></div>
             <p>{location.street_address}</p>
-            <p>{location.city} {location.state}</p>
+            <p>{location.city}, {location.state}</p>
+            <br /> 
+            <p>{location.phone}</p>
             </div>
           </div>
         </div>
