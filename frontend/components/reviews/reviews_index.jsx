@@ -11,7 +11,6 @@ class ReviewsIndex extends React.Component {
 
     componentDidMount() {
         // const locationId = this.props.location.id;
-        console.log(this.props);
         // const locationId = this.props.match.params.locationId;
         this.props.getReviews(this.props.locationId);
     }
@@ -69,7 +68,6 @@ class ReviewsIndex extends React.Component {
     }
 
     render() {
-        // console.log(this.props);
         if (this.props.reviews.length === 0) {
             return(
                 <div>

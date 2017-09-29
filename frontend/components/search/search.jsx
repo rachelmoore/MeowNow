@@ -14,7 +14,6 @@ class Search extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    console.log(this);
     this.props.fetchCity(this.state.query).then(
       () => {
         if (this.props.locations.hash !== "/locations") {

@@ -18,7 +18,6 @@ class SessionForm extends React.Component {
     this.update = this.update.bind(this);
     this.closeModal = this.closeModal.bind(this);
     this.openModal = this.openModal.bind(this);
-    console.log(this.state);
   }
 
   closeModal() {

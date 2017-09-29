@@ -6,10 +6,13 @@
                             :street_address,
                             :city,
                             :state,
+                            :phone, 
+                            :website,
                             :latitude,
                             :longitude,
                             :num_cats,
                             :free,
-                            :adoptable
+                            :adoptable, 
+                            :img_url
   end
 end
