@@ -26,7 +26,7 @@ I wanted MeowNow.io to have a stark overall look with increasingly playful/hapha
 * #F76058 - red orange
 * #EBE3CD - neutral
 
-## Homepage and Modal login 
+## Homepage & Modal login 
 
 ![](http://res.cloudinary.com/df9oqycdp/image/upload/v1506720858/Screen_Shot_2017-09-29_at_1.35.31_PM_dmww2v.png)
 ![](http://res.cloudinary.com/df9oqycdp/image/upload/v1506720859/Screen_Shot_2017-09-29_at_1.35.46_PM_tjhrup.png)
@@ -59,9 +59,9 @@ The markers and locations index data update when the bounds change via the event
 }
 ```
 
-## Locations List Page
+## Reviews Creation & Deletion
 
-## Location Information 
+![](http://res.cloudinary.com/df9oqycdp/image/upload/v1506722355/REVIEWS-min_fibxkw.gif)
 
 ## Random Location Cat Generator
 
