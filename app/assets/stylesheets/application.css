@@ -502,7 +502,7 @@ box-shadow: 0px 4px 6px #333;
   justify-content: space-around;
   flex-direction: row;
   background-image: url("http://hellahoops.com/corkboard.jpg");
-  border: 2px solid #2e2e2e;
+  /* border: 2px solid #2e2e2e; */
   border-radius: 5px;
 }
 

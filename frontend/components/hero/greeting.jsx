@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const sessionLinks = () => (
-  <nav className="login-signup">
-    <Link to="/login">Log In</Link>
-    <br />
-    <Link to="/signup">Sign Up</Link>
-  </nav>
-);
+// const sessionLinks = () => (
+//   <nav className="login-signup">
+//     <Link to="/login">Log In</Link>
+//     <br />
+//     <Link to="/signup">Sign Up</Link>
+//   </nav>
+// );
 
 const personalGreeting = (currentUser, logout) => (
   <header className="greetings-header">
@@ -23,7 +23,7 @@ const personalGreeting = (currentUser, logout) => (
 );
 
 const Greeting = ({ currentUser, logout }) => (
-  currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
+  currentUser ? personalGreeting(currentUser, logout) : null
 );
 
 export default Greeting;

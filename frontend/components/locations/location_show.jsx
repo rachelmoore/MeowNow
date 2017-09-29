@@ -62,7 +62,6 @@ class LocationShow extends React.Component {
                 </div>
                 <div className="location-show-right-container">
                   <div className="corkboard">
-                    <p className="featured-cat-text">Featured Cat:</p>
                     <div className="location-cats">
                       <div className="featured-cat-img-container">
                         <img src={cat.img_url} className="featured-cat" />
@@ -84,7 +83,9 @@ class LocationShow extends React.Component {
         </div>
       </div>
     );
-  } 
+  } else {
+    return null;
+  }
   }
 
 }

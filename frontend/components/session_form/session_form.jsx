@@ -73,6 +73,9 @@ class SessionForm extends React.Component {
 
 
   render() {
+    if (this.props.loggedIn) {
+      return null; 
+    } else {
     return (
       <div className="nav-container">
 
@@ -138,6 +141,7 @@ class SessionForm extends React.Component {
         </Modal>
       </div>
     );
+    }
   }
 
 }

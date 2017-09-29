@@ -309,7 +309,6 @@ class LocationsIndexMap extends React.Component {
 
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-    // this._registerListeners();
     this.MarkerManager.updateMarkers(this.props.catLocations);
     this.props.catLocations.forEach(catLocation => this.locationMarker(catLocation));
 
@@ -329,16 +328,6 @@ class LocationsIndexMap extends React.Component {
   componentDidUpdate() {
     this.MarkerManager.updateMarkers(this.props.catLocations);
   }
-
-  // _registerListeners() {
-  //   google.maps.event.addListener(this.map, 'idle', () => {
-  //     const { north, south, east, west } = this.map.getBounds().toJSON();
-  //     const bounds = {
-  //       northEast: { lat:north, lng: east },
-  //       southWst: { lat: south, lng: west } };
-  //     this.props.changeBounds(bounds: bounds);
-  //   });
-  // }
 
   locationMarker(catLocation) {
     let infowindow = new google.maps.InfoWindow({

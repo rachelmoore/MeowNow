@@ -15,8 +15,8 @@ import { ProtectedRoute } from '../util/route_util';
 const App = () => (
   <div>
     <header>
-      <AuthRoute exact path="/" component={SessionFormContainer} />
-      <ProtectedRoute path="/" component={GreetingContainer} />
+      <Route path="/" component={SessionFormContainer} />
+      <Route path="/" component={GreetingContainer} />
     </header>
     <main className="main">
       <Route exact path="/" component={HeroContainer} />
