@@ -1,3 +1,3 @@
 # MeowNow
 
-[https://meownowdotio.herokuapp.com/#/](https://meownowdotio.herokuapp.com/#/ "MeowNow.io")
+[MeowNow.io](https://meownowdotio.herokuapp.com/#/ "MeowNow.io")
