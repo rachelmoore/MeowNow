@@ -27,27 +27,7 @@ The map re-renders based on `this.props.bounds`.
 
 The markers and locations index data update when the bounds change via the event listener.
 
-`componentDidMount() {
-    // set the map to show SF
-    const mapOptions = {
-      center: this.props.bounds, // this is SF this.props.bounds.geometry.location,
-      zoom: 13,
-      styles: [
-  {
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#ebe3cd"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.fill",
-    "stylers": [/*s000much custom Google Maps stylying you don't wanna see*/]
-    };
-
-
-
+`
     this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
     this.MarkerManager.updateMarkers(this.props.catLocations);
