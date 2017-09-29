@@ -33,8 +33,8 @@ The React magic happens in my LocationsIndexMap React component. When I create a
 The map re-renders based on `this.props.bounds`.
 
 The markers and locations index data update when the bounds change via the event listener.
-
-   `this.map = new google.maps.Map(this.mapNode, mapOptions);
+```
+    this.map = new google.maps.Map(this.mapNode, mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
     this.MarkerManager.updateMarkers(this.props.catLocations);
     this.props.catLocations.forEach(catLocation => this.locationMarker(catLocation));
@@ -49,7 +49,8 @@ The markers and locations index data update when the bounds change via the event
       this.MarkerManager.updateMarkers(this.props.catLocations);
       this.props.catLocations.forEach(catLocation => this.locationMarker(catLocation));
     });
-}`
+}
+```
 
 ## Locations List Page
 
