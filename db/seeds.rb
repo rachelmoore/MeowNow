@@ -32,6 +32,23 @@ User.create(username: "Rachel", password: "123456")
 User.create(username: "Guest", password: "password")
 User.create(username: "kittyl0v3", password: "password")
 
+
+Cat.create(name: "Buffy", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643230/kittea_buffy_qnczl2.png")
+Cat.create(name: "Blinx", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643180/kittea_blinx_ptfvdt.png")
+Cat.create(name: "Shiloh", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643118/kittea_shiloh_vchwre.png")
+Cat.create(name: "Steve", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643034/kittea_steve_jqv0fc.png")
+Cat.create(name: "Burger", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506642972/kittea_burger_qz9nvb.png")
+Cat.create(name: "Otis", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506642887/kittea_otis_czqnno.png")
+Cat.create(name: "Ron", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506642836/kittea_ron_e3xaqd.png")
+Cat.create(name: "Ginny", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506642781/kittea_ginny_yw6jxf.png")
+Cat.create(name: "Dolly", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506642731/kittea_dolly_umiex3.png")
+Cat.create(name: "Cheeto", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506642663/kittea_cheeto_xtugl4.png")
+Cat.create(name: "Cheddar", location_id: 3, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506642545/kittea_cheddar_oyzucb.png")
+Cat.create(name: "Ripley", location_id: 2, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643953/borderlands_ripley_ddpyt3.jpg")
+Cat.create(name: "Ash", location_id: 2, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643941/borderlands_ash_c6tywy.png")
+Cat.create(name: "Frost", location_id: 2, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643941/borderlands_frost_oq5axy.png")
+
+
 Review.create(author_id: 1, location_id: 1, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)
 Review.create(author_id: 3, location_id: 1, body: "My daughter and I love stopping by this little bookstore to pet Owen the cat. He's very gentle and patient with children. The discount books are a bonus. :)", rating: 5)
 Review.create(author_id: 1, location_id: 2, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)

@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170926052713) do
+ActiveRecord::Schema.define(version: 20170928233623) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cats", force: :cascade do |t|
+    t.string "name"
+    t.integer "location_id"
+    t.string "img_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["location_id"], name: "index_cats_on_location_id"
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string "location_name", null: false

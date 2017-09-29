@@ -78,7 +78,8 @@ class ReviewsIndex extends React.Component {
             );
         }
         return(
-            <div className="reviews-index-container"> 
+            <div className="reviews-index-container">
+                <div className="reviews-content-container"> 
                 <div className="reviews-list-container"> 
                     <ul className="reviews-list">
                         {this.props.reviews.map((review, idx) => (
@@ -90,7 +91,7 @@ class ReviewsIndex extends React.Component {
                                     <div className="review-username-and-buttons">
                                         <div className="review-username-container">
                                             <h4 className="review-username">
-                                                {review.author.username}
+                                                -{review.author.username}
                                             </h4>
                                         </div>
                                         <div className="review-buttons">
@@ -112,7 +113,13 @@ class ReviewsIndex extends React.Component {
                     </div>
                 </div>
                 <div className="reviews-location-info-container">
-                    Placeholder
+                    <div className="reviews-location-info-text">
+                        <h3 className="location-properties-header">Location Properties:</h3>
+                        <p>Number of cats: 3</p>
+                        <p>Adoptable: false</p>
+                        <p>Free: false</p>
+                    </div>
+                </div>
                 </div>
             </div>
         );

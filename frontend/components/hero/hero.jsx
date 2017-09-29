@@ -14,7 +14,7 @@ class Hero extends React.Component {
         <div className="text-search-container">
           <div className="logo-text">
             <h2>MeowNow</h2>
-            <img src="https://i.imgur.com/dPJ7A0L.png" height="65px" />
+            <img src="http://hellahoops.com/catdoodletransparent.png" height="70px" className="hero-logo-img" />
           </div>
           <div className="tagline-text">
             <h5>Find <span className="yellow-span">public cats</span> near you!</h5>

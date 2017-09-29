@@ -23,4 +23,9 @@ class Location < ApplicationRecord
     foreign_key: :location_id, 
     class_name: :Review
 
+    has_many :cats, 
+    primary_key: :id, 
+    foreign_key: :location_id, 
+    class_name: :Cat
+
 end

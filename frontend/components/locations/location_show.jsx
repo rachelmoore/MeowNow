@@ -50,25 +50,24 @@ class LocationShow extends React.Component {
                   </div>
                 </div>
                 <div className="location-show-right-container">
-                  <div className="location-show-properties">
-                    <h3>Location Properties:</h3>
-                    <p>Number of cats: {this.state.location.num_cats}</p>
-                    <p>Adoptable: false</p>
-                    <p>Free: false</p>
+                  <div className="corkboard">
+                    <div className="location-show-post-it">
+                      <p>Number of cats: 3</p>
+                      <p>Adoptable: false</p>
+                      <p>Free: false</p>
+                    </div>
+                    <div className="location-cats">
+                      <center><p className="featured-cat-text">Featured Cat:</p></center>
+                      <img src="https://borderlands-books.com/images/bio_ripley.jpg" className="featured-cat" />
+                      <center><p className="cat-name-text">Ripley</p></center>
+                    </div> 
                   </div>
-                  
                 </div>
+
               </div>
 
             </div>
 
-            <div className="location-cats-list-container">
-              <div className="location-cats">
-                <center><p className="featured-cat-text">Featured Cat:</p></center>
-                <img src="https://borderlands-books.com/images/bio_ripley.jpg" className="featured-cat" />
-                <center><p className="cat-name-text">Ripley</p></center>
-              </div>
-            </div>
           </div>
           <div className="location-show-reviews-container">
             <ReviewsIndexContainer locationId={this.props.locationId}/> 

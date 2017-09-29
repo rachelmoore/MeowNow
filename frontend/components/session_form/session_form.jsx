@@ -78,7 +78,7 @@ class SessionForm extends React.Component {
 
         <div className="logo-container">
           <h2>MeowNow</h2>
-          <Link to="/"><img src="https://i.imgur.com/dPJ7A0L.png" height="65px" /></Link>
+          <Link to="/"><img src="http://hellahoops.com/catdoodletransparent.png" height="50px" className="nav-logo-img" /></Link>
         </div>
 
         <div className="login-signup-buttons">

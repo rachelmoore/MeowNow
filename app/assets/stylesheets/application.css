@@ -22,6 +22,10 @@ body {
 
 /* Sessions Form */
 
+.nav-logo-img {
+  padding: 5px;
+}
+
 .nav-container {
   width: 100%;
   display: flex;
@@ -189,6 +193,10 @@ body {
   flex-direction: column;
 }
 
+.hero-logo-img {
+  padding-left: 5px;
+}
+
 .text-search-container {
   display: flex;
   flex-direction: column;
@@ -331,9 +339,10 @@ width: 500px;
 }
 
 .locations-index-item-name-link:hover {
-  text-shadow: #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px,
+  text-decoration: underline;
+  /* text-shadow: #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px,
     #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px,   #E4CB72 0px 0px 1px;
-    -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased; */
 }
 
 .locations-index-item-info {
@@ -385,7 +394,7 @@ width: 500px;
   flex-direction: column;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
-  min-width: 600px;
+  min-width: 940px;
   padding: 20px;
   margin-top: 15px;
   background-color: #E9E5CA;
@@ -463,11 +472,34 @@ width: 500px;
         position:relative;
 }
 
-.location-show-right-container {
-  border: 2px solid blue;
-  width: 250px;
-  display: flex;
-  justify-content: center;
+.corkboard {
+  /* display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-image: url("http://hellahoops.com/corkboard.jpg");
+  border: 2px solid #2e2e2e;
+  border-radius: 5px; */
+}
+
+.location-show-post-it {
+  background:#fefabc; 
+  padding:15px; 
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 14px;; 
+  color: #000; 
+  width:200px;
+  height: 120px; 
+
+/* -moz-transform: rotate(7deg);
+-webkit-transform: rotate(7deg);
+-o-transform: rotate(7deg);
+-ms-transform: rotate(7deg);
+transform: rotate(7deg); */
+
+box-shadow: 0px 4px 6px #333;
+-moz-box-shadow: 0px 4px 6px #333;
+-webkit-box-shadow: 0px 4px 6px #333; 
 }
 
 .location-show-properties {
@@ -532,6 +564,12 @@ width: 500px;
 
 .reviews-list {
   margin-bottom: 20px;
+}
+
+.reviews-content-container {
+  min-width: 940px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .review-container {
@@ -641,13 +679,9 @@ width: 500px;
 }
 
 .reviews-location-info-container {
-  width: 240px;
-  border: 2px solid orange;
-  padding: 10px;
+  width: 340px;
   margin-top: 15px;
-  border: 2px solid #2e2e2e;
-  border-radius: 5px;
-  background-color: #E9E5CA;
+  background-color: #FFFFFF;
 }
 
 .log-in-to-review {
@@ -689,6 +723,8 @@ width: 500px;
 .review-input {
   width: 300px;
   height: 120px;
+  max-width: 300px;
+  max-height: 120px;
   border: 4px solid #A5B077;
   color: #333;
   background: #fff;
@@ -725,16 +761,39 @@ width: 500px;
   border-radius: 5px;
   height: 2px;
   text-align: center;
-  width: 600px;
+  width: 550px;
 }
 
-/* .paw-hr:after {
-	  font-family:'FontAwesome';
-    content: '\xf1b0';  
-    display: inline-block;
-    position: relative; 
-    top: -0.7em;  
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: transparent;
-} */
+/* Placeholder */
+
+/* CSS Post-It Note from here: http://wpandsuch.com/create-a-post-it-note-with-css3/ */
+
+.reviews-location-info-text {
+  background:#fefabc; 
+  /* margin-left: -200px;
+  margin-top: -100px; */
+  padding:15px; 
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 14px;; 
+  color: #000; 
+  width:200px;
+  height: 110px; 
+
+-moz-transform: rotate(7deg);
+-webkit-transform: rotate(7deg);
+-o-transform: rotate(7deg);
+-ms-transform: rotate(7deg);
+transform: rotate(7deg);
+
+box-shadow: 0px 4px 6px #333;
+-moz-box-shadow: 0px 4px 6px #333;
+-webkit-box-shadow: 0px 4px 6px #333;
+
+}
+
+.location-properties-header {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
