@@ -1,5 +1,8 @@
 # MeowNow
 
+![GitHub Logo](http://res.cloudinary.com/df9oqycdp/image/upload/v1506718564/catfacedoodle_etknl9.png)
+Format: ![Alt Text](url)
+
 See [MeowNow.io](https://meownowdotio.herokuapp.com/#/ "MeowNow.io") in action!
 
 MeowNow, a Yelp clone, is a social media application that allows users to search for locations where public cats are available, read reviews about each location, and post their own reviews for a location.
