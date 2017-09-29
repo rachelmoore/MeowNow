@@ -67,8 +67,10 @@ class LocationShow extends React.Component {
                     </div>
                     <div className="location-cats">
                       <center><p className="featured-cat-text">Featured Cat:</p></center>
-                      <img src={cat.img_url} className="featured-cat" />
-                      <center><p className="cat-name-text">{cat.name}</p></center>
+                      <div className="featured-cat-img-container">
+                        <img src={cat.img_url} className="featured-cat" />
+                        <center><p className="cat-name-text">{cat.name}</p></center>
+                      </div>
                     </div> 
                   </div>
                 </div>

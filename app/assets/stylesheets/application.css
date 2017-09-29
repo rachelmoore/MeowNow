@@ -455,7 +455,7 @@ width: 500px;
 .featured-cat {
   height: 200px;
   width: 200px;
-  background: white;
+  /* background: white;
 	display: inline;
 	float: left;
 	margin: 10px 10px 10px 10px;
@@ -469,7 +469,7 @@ width: 500px;
 	-moz-transition: all .15s linear;
 	transition: all .15s linear;
 	z-index:0;
-        position:relative;
+        position:relative; */
 }
 
 .corkboard {
@@ -506,7 +506,27 @@ box-shadow: 0px 4px 6px #333;
 
 }
 
+
+.featured-cat-img-container {
+  background: white;
+	display: inline;
+	float: left;
+	margin: 10px 10px 10px 10px;
+	padding: 10px 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	box-shadow: 0 4px 6px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	transition: all .15s linear;
+	z-index:0;
+        position:relative;
+}
+
 .cat-name-text {
+  padding-top: 10px;
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
   font-size: 22px;
