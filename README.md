@@ -21,6 +21,50 @@ I wanted MeowNow.io to play tug-of-war between a super-stark homepage and increa
 
 ## Search
 
+The React magic happens in my LocationsIndexMap React component. When I create a map, `mapOptions` are passed in to style the map. I initialize with SF bounds but no matter what the search is it will render the map based on the search query even if no 'cat locations' exist there. 
+
+The map re-renders based on `this.props.bounds`.
+
+The markers and locations index data update when the bounds change via the event listener.
+
+`componentDidMount() {
+    // set the map to show SF
+    const mapOptions = {
+      center: this.props.bounds, // this is SF this.props.bounds.geometry.location,
+      zoom: 13,
+      styles: [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#ebe3cd"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [/*s000much custom Google Maps stylying you don't wanna see*/]
+    };
+
+
+
+    this.map = new google.maps.Map(this.mapNode, mapOptions);
+    this.MarkerManager = new MarkerManager(this.map);
+    this.MarkerManager.updateMarkers(this.props.catLocations);
+    this.props.catLocations.forEach(catLocation => this.locationMarker(catLocation));
+
+    this.map.addListener('bounds_changed', () => {
+      const { north, south, east, west } = this.map.getBounds().toJSON();
+      const newBounds = {
+        northEast: { lat:north, lng: east },
+        southWst: { lat: south, lng: west }
+        };
+      this.props.updateBounds(newBounds);
+      this.MarkerManager.updateMarkers(this.props.catLocations);
+      this.props.catLocations.forEach(catLocation => this.locationMarker(catLocation));
+    });`
+}
+
 ## Locations List Page
 
 ## Location Information 
