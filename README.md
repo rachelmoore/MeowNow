@@ -15,7 +15,14 @@ MeowNow, a Yelp clone, is a social media application that allows users to search
 
 ## Design 
 
-I wanted MeowNow.io to play tug-of-war between a stark overall look and increasingly playful/haphazard design accents. 
+I wanted MeowNow.io to have a stark overall look with increasingly playful/haphazard design accents. My color palette was inspired by the Google Maps "retro" theme that I styled my map with: https://mapstyle.withgoogle.com/ 
+
+*#E68958 - orange
+*#F8C967 - light orange
+*#A5B076 - green
+*#B9D3C2 - blue
+*#F76058 - red orange
+*#EBE3CD - neutral
 
 ## Search
 
