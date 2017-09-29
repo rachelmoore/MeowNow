@@ -15,7 +15,7 @@ MeowNow, a Yelp clone, is a social media application that allows users to search
 
 ## Design 
 
-content 
+I wanted MeowNow.io to play tug-of-war between a super-stark homepage and increasingly playful/haphazard features. 
 
 ## Search
 
