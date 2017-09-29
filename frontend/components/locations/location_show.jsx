@@ -12,6 +12,7 @@ class LocationShow extends React.Component {
 
   componentDidMount() {
     this.props.fetchLocation(this.props.match.params.locationId);
+    this.props.fetchRandomCat(this.props.match.params.locationId);
   }
 
   componentWillReceiveProps(newProps) {
@@ -23,6 +24,14 @@ class LocationShow extends React.Component {
 
   render() {
     const location = this.state.location;
+    const cat = this.props.cat;
+    if (!this.props.cat) {
+      return null;
+    } 
+
+    // const cat = this.props.cat;
+    // if(cat.location_id)
+
     if (location) {
     return(
       <div>
@@ -58,8 +67,8 @@ class LocationShow extends React.Component {
                     </div>
                     <div className="location-cats">
                       <center><p className="featured-cat-text">Featured Cat:</p></center>
-                      <img src="https://borderlands-books.com/images/bio_ripley.jpg" className="featured-cat" />
-                      <center><p className="cat-name-text">Ripley</p></center>
+                      <img src={cat.img_url} className="featured-cat" />
+                      <center><p className="cat-name-text">{cat.name}</p></center>
                     </div> 
                   </div>
                 </div>
