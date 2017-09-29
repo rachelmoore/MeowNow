@@ -58,7 +58,7 @@ The markers and locations index data update when the bounds change via the event
 
 ## Random Location Cat Generator
 
-![Search](http://res.cloudinary.com/df9oqycdp/image/upload/v1506718537/catgenerator_kuzmgp.gif)
+![Search](http://res.cloudinary.com/df9oqycdp/image/upload/v1506720748/catsgenerator_folvhi.gif)
 
 ## Future Directions for the Project
 
