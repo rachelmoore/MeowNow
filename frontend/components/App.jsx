@@ -7,13 +7,14 @@ import SessionFormContainer from './session_form/session_form_container';
 import HeroContainer from './hero/hero_container';
 import LocationsIndexContainer from './locations/locations_index_container';
 import LocationShowContainer from './locations/location_show_container';
+import FooterContainer from './footer/footer_container';
 // import AdoptableContainer from './features/adoptable_container';
 // import ShopContainer from './features/shop_container';
 import { AuthRoute } from '../util/route_util';
 import { ProtectedRoute } from '../util/route_util';
 
 const App = () => (
-  <div>
+  <div className="Site">
     <header>
       <Route path="/" component={SessionFormContainer} />
       <Route path="/" component={GreetingContainer} />
@@ -24,6 +25,9 @@ const App = () => (
       <Route exact path="/locations" component={LocationsIndexContainer} />
       <Route exact path="/locations/:locationId" component={LocationShowContainer} />
     </main>
+    <footer>
+      <Route path="/" component={FooterContainer} />
+    </footer>
   </div>
 );
 

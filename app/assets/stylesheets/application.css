@@ -14,7 +14,15 @@
  *= require_self
  */
 
+.Site {
+  display: flex;
+  min-height: 98vh;
+  flex-direction: column;
+}
 
+.main {
+  flex: 1;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -877,4 +885,18 @@ box-shadow: 0px 4px 6px #333;
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
   font-size: 14px;
+}
+
+/* Footer */
+
+.footer-container {
+
+}
+
+.footer-links {
+
+}
+
+.footer-link-item {
+
 }
