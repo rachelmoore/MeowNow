@@ -415,7 +415,8 @@ padding-left: 10px;
   min-width: 940px;
   padding: 20px;
   margin-top: 15px;
-  background-color: #E9E5CA;
+  /* background-color: #E9E5CA; */
+  background-image: url("http://hellahoops.com/corkboard.jpg");
 }
 
 .location-show-header-container {
@@ -449,11 +450,11 @@ padding-left: 10px;
 }
 
 .location-show-map-cats-container {
-  border: 2px solid #2e2e2e;
-  border-radius: 5px;
+  /* border: 2px solid #2e2e2e;
+  border-radius: 5px; */
   display: flex;
   justify-content: space-between;
-  background-image: url("http://hellahoops.com/corkboard.jpg");
+  /* background-image: url("http://hellahoops.com/corkboard.jpg"); */
   
 }
 
