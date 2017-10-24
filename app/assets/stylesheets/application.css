@@ -18,6 +18,7 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  /* background-color: #F3F3F3; */
 }
 
 /* Sessions Form */
@@ -146,6 +147,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: #F3F3F3;
+  border-bottom: 2px solid #2e2e2e;
 }
 
 .greeting-container {
@@ -188,6 +191,7 @@ body {
   min-width: 600px;
   margin-left: 100px;
   margin-right: 100px;
+  background-color: #FFFFFF;
   /* border: 2px solid #2e2e2e;
   border-radius: 5px; */
   display: flex;
@@ -296,7 +300,7 @@ padding-left: 10px;
   margin-left: 100px;
   margin-right: 100px;
   padding: 20px;
-  border: 2px solid #2e2e2e;
+  /* border: 2px solid #2e2e2e; */
   border-radius: 5px;
 }
 
@@ -325,20 +329,20 @@ padding-left: 10px;
   border: 2px solid #2e2e2e;
   border-radius: 5px;
   min-width: 400px;
-  padding: 20px;
+  padding: 10px;
   margin-top: 15px;
   background-color: #E9E5CA;
 }
 
 .locations-index-item-name {
-  border: 2px solid #2e2e2e;
-  border-radius: 5px;
+  /* border: 2px solid #2e2e2e;
+  border-radius: 5px; */
   padding: 3px;
 }
 
 .locations-index-item-name-link {
-  font-family: 'Varela Round', sans-serif;
-  font-weight: bold;
+  /* font-family: 'Varela Round', sans-serif; */
+  font-weight: 700;
   font-size: 25px;
   text-decoration: none;
   color: #000000;
@@ -393,8 +397,8 @@ padding-left: 10px;
   margin-left: 100px;
   margin-right: 100px;
   padding: 20px;
-  border: 2px solid #2e2e2e;
-  border-radius: 5px;
+  /* border: 2px solid #2e2e2e;
+  border-radius: 5px; */
 }
 
 .location-show-subcontainer {
