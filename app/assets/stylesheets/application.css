@@ -303,6 +303,10 @@ padding-left: 10px;
 
 /* Locations Index */
 
+.locations-index-background {
+  background-color: #E9E5CA;
+}
+
 .locations-index-container {
   min-width: 1000px;
   margin-left: 100px;
@@ -310,12 +314,13 @@ padding-left: 10px;
   padding: 20px;
   /* border: 2px solid #2e2e2e; */
   border-radius: 5px;
+  background-color: #E9E5CA;
 }
 
 .locations-list-and-map {
   display: flex;
   justify-content: space-around;
-  background-color: #FFFFFF;
+  background-color: #E9E5CA;
   /* border: 2px solid yellow; */
 
 }
@@ -334,12 +339,12 @@ padding-left: 10px;
 .locations-index-item-all {
   display: flex;
   flex-direction: column;
-  border: 2px solid #2e2e2e;
+  /* border: 2px solid #2e2e2e; */
   border-radius: 5px;
   min-width: 400px;
   padding: 10px;
   margin-top: 15px;
-  background-color: #E9E5CA;
+  background-color: #FFFFFF;
 }
 
 .locations-index-item-name {

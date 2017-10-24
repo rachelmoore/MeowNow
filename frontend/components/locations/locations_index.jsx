@@ -14,6 +14,7 @@ class LocationsIndex extends React.Component {
   render() {
     const locations = this.props.locations;
       return (
+        <div className="locations-index-background">
         <div className="locations-index-container">
           <div className="locations-list-and-map">
 
@@ -30,6 +31,7 @@ class LocationsIndex extends React.Component {
             </div>
 
           </div>
+        </div>
         </div>
     );
   }
