@@ -25,7 +25,7 @@ class Hero extends React.Component {
         </div>
 
         <div className="cat-banner">
-          <img src="http://hellahoops.com/CatBanner.jpg" width="600px;" />
+          <img src="http://hellahoops.com/CatBanner.jpg" width="800px;" />
         </div>
 
       </div>

@@ -28,8 +28,10 @@ body {
 
 .nav-container {
   width: 100%;
+  background-color: #F3F3F3;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #2e2e2e;
 }
 
 .logo-container {
@@ -186,8 +188,8 @@ body {
   min-width: 600px;
   margin-left: 100px;
   margin-right: 100px;
-  border: 2px solid #2e2e2e;
-  border-radius: 5px;
+  /* border: 2px solid #2e2e2e;
+  border-radius: 5px; */
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -226,7 +228,7 @@ body {
 .cat-banner {
   margin-top: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: baseline;
   padding-bottom: 20px;
   padding-right: 20px;
