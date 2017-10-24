@@ -34,7 +34,7 @@ class ReviewForm extends React.Component {
 
                     <div className="review-form">
 
-                        <label><p className="review-label"><u>Leave new review:</u></p>
+                        <label>
                              <textarea
                                 className="review-input"
                                 placeholder="Your review here"

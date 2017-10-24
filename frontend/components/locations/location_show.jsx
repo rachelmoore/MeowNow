@@ -35,6 +35,7 @@ class LocationShow extends React.Component {
     if (location) {
     return(
       <div>
+        <div className="location-show-background-color">
         <div className="location-show-container">
 
           <div className="location-show-subcontainer">
@@ -82,6 +83,7 @@ class LocationShow extends React.Component {
             <ReviewsIndexContainer locationId={this.props.locationId}/> 
             
           </div>
+        </div>
         </div>
       </div>
     );
