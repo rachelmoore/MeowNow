@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { login } from '../../actions/session_actions';
-import PublicCat from './hero';
+import PublicCat from './public_cat';
 
 const mapDispatchToProps = (dispatch) => ({
     login: (user) => dispatch(login(user))
