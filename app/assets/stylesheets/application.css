@@ -649,8 +649,8 @@ box-shadow: 0px 4px 6px #333;
 .reviews-list-container {
   display: flex;
   flex-direction: column;
-  /* border: 2px solid #2e2e2e;
-  border-radius: 5px; */
+  border: 2px solid #2e2e2e;
+  border-radius: 5px;
   max-width: 600px;
   padding: 20px;
   margin-top: 15px;
