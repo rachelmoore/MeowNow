@@ -47,6 +47,7 @@ Cat.create(name: "Cheddar", location_id: 3, img_url: "http://res.cloudinary.com/
 Cat.create(name: "Ripley", location_id: 2, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643953/borderlands_ripley_ddpyt3.jpg")
 Cat.create(name: "Ash", location_id: 2, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643941/borderlands_ash_c6tywy.png")
 Cat.create(name: "Frost", location_id: 2, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/v1506643941/borderlands_frost_oq5axy.png")
+Cat.create(name: "Owen", location_id: 1, img_url: "http://res.cloudinary.com/df9oqycdp/image/upload/c_crop,h_849,w_849/v1509336742/otis_o6whtz.jpg")
 
 
 Review.create(author_id: 1, location_id: 1, body: "80% of the time I walk past this storefront the resident orange Tabby 'Owen' is sunning himself in the main window. He's happy to be petted even while in the middle of a nap. One of the best bets for a free cat experience in town!", rating: 5)
