@@ -99,7 +99,8 @@ body {
 }
 
  .modal-form-container {
-
+  height: 300px;
+  width: 300px;
 }
 
 .login-form-box {
