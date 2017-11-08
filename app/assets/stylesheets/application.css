@@ -962,21 +962,23 @@ box-shadow: 0px 4px 6px #333;
   letter-spacing: 2px;
 }
 
-.public-cat-story-container {
+.public-cat-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-width: 1200px;
+  
 }
 
 .public-cat-story {
-  display: grid;
+  display: flex;
+  
 }
 
 .cat-1 {
-  grid-column: 1
+  flex: 1;
 }
 
 .cat-2 {
-  grid-column: 2
+  flex: 1;
 }
+
