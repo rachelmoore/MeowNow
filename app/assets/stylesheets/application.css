@@ -945,7 +945,7 @@ box-shadow: 0px 4px 6px #333;
 /* Public Cat */
 
 
-.public-cat-title {
+ .public-cat-title {
   margin-top: 50px;
 }
 
@@ -962,23 +962,33 @@ box-shadow: 0px 4px 6px #333;
   letter-spacing: 2px;
 }
 
+
+
 .public-cat-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  
+  border: 2px solid orange;
 }
 
 .public-cat-story {
   display: flex;
-  
 }
 
 .cat-1 {
   flex: 1;
+  border: 2px solid blue;
 }
 
 .cat-2 {
   flex: 1;
-}
+  border: 2px solid purple;
+} 
 
+@media screen and (min-width: 800px) {
+  .cat-1 {
+    flex: 1;
+  }
+  .cat-2 {
+    flex: 1;
+  }
+}
