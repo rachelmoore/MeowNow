@@ -30,6 +30,7 @@ body {
   /* font-family: 'Old Standard TT', serif; */
   /* font-family: 'Oswald', sans-serif; */
   font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   /* background-color: #F3F3F3; */
 }
 
@@ -118,7 +119,7 @@ body {
   justify-content: center;
   font-family: 'Varela Round', sans-serif;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 45px;
 }
 
 .modal-logo-text {
