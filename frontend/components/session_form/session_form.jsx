@@ -98,12 +98,12 @@ class SessionForm extends React.Component {
 
               <div className="modal-logo">
                   <h2 className="modal-logo-text">MeowNow</h2>
-                  <img src="http://hellahoops.com/catdoodletransparent.png" height="45px" />
+                  <img src="http://hellahoops.com/catdoodletransparent.png" height="65px" />
               </div>
 
               <div className="login-form">
 
-                <label>Username
+                <label className="modal-label">Username
                   <input type="text"
                     className="modal-input"
                     value={this.state.username}
@@ -111,7 +111,7 @@ class SessionForm extends React.Component {
                     />
                 </label>
 
-                <label>Password
+                <label className="modal-label">Password
                   <input type="password"
                     className='modal-input'
                     value={this.state.password}
