@@ -8,12 +8,9 @@ class PublicCat extends React.Component {
 
     render() {
         return (
-          
+       <center >
             <div className="public-cat-container">
 
-           
-            
-        
                      <div className="public-cat-story">
                         <div className="cat-1">
                             <p>"Public Cats" are simply cats who reside at businesses that are open to the public. In the US 
@@ -51,9 +48,9 @@ class PublicCat extends React.Component {
                                 <img src="http://hellahoops.com/catdoodletransparent.png" />
                         </div>
                     </div> 
-                
-            </div>
-           
+            
+                </div>
+            </center>
         );
     }
 }
