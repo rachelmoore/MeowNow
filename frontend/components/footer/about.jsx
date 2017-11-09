@@ -13,7 +13,7 @@ class About extends React.Component {
 
                     <div className="public-cat-story">
                         <div className="cat-1">
-                            <p className="public-cat-paragraph">One day in the summer of 2016 I was feeling lonely as I walked back to my apartment. 
+                            <p className="public-cat-paragraph">One evening in the summer of 2016 I was feeling lonely as I walked back to my apartment. 
                                 Suddenly, a cat appeared at the end of the block. A strange sight in my new neighborhood!
                             </p> 
                             <p className="public-cat-paragraph">
