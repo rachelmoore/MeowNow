@@ -23,12 +23,12 @@ class About extends React.Component {
                             </p>
                         </div>
                         <div className="cat-2">
-                            <img src="http://res.cloudinary.com/df9oqycdp/image/upload/c_crop,h_800,w_1200/v1510186181/catfreezer_foidyf.jpg" height="400px" />
+                            <img src="http://res.cloudinary.com/df9oqycdp/image/upload/v1510193791/catfillmore_zjt3x3.jpg" height="600px" />
                         </div>
                     </div>
                     <div className="public-cat-story">
                         <div className="cat-3">
-                            <img src="http://res.cloudinary.com/df9oqycdp/image/upload/c_crop,h_800,w_1200,x_0,y_0/v1509336742/otis_o6whtz.jpg" height="400px" />
+                            <img src="http://res.cloudinary.com/df9oqycdp/image/upload/v1510194692/catgirl_nrj5i1.png" height="400px" />
                         </div>
                         <div className="cat-4">
                             <p className="public-cat-paragraph">This cat is <a href="https://twitter.com/catfillmore">@CatFillmore</a>, a famous and friendly neighborhood character. His “real” name is Marlowe, 
@@ -45,7 +45,7 @@ class About extends React.Component {
                             </p>
                         </div>
                         <div className="cat-6">
-                            <img src="http://res.cloudinary.com/df9oqycdp/image/upload/v1510188680/catatm_xu89wg.png" height="400px" />
+                            <img src="http://res.cloudinary.com/df9oqycdp/image/upload/v1510194691/catsecurity_oresyf.png" height="600px" />
                         </div>
                     </div>
 
