@@ -11,6 +11,13 @@ class PublicCat extends React.Component {
        <center >
             <div className="public-cat-container">
 
+                    <div className="public-cat-title">
+                        <center>
+                            <h2 className="what-is-public-cat">What is a "public cat"? &#x1F914;</h2>
+                            <p className="sounds-creepy">Sounds creepy...</p>
+                        </center>
+                    </div>
+
                      <div className="public-cat-story">
                         <div className="cat-1">
                             <p>"Public Cats" are simply cats who reside at businesses that are open to the public. In the US 
@@ -20,7 +27,7 @@ class PublicCat extends React.Component {
                             </p>
                         </div>
                         <div className="cat-2">
-                                <img src="http://hellahoops.com/catdoodletransparent.png" />
+                            <img src="http://res.cloudinary.com/df9oqycdp/image/upload/c_crop,h_800,w_1200/v1510186181/catfreezer_foidyf.jpg" />
                         </div>
                     </div>
                     <div className="public-cat-story">
