@@ -8,6 +8,7 @@ import HeroContainer from './hero/hero_container';
 import LocationsIndexContainer from './locations/locations_index_container';
 import LocationShowContainer from './locations/location_show_container';
 import PublicCatContainer from './footer/public_cat_container';
+import AboutContainer from './footer/about_container';
 import FooterContainer from './footer/footer_container';
 // import AdoptableContainer from './features/adoptable_container';
 // import ShopContainer from './features/shop_container';
@@ -26,6 +27,7 @@ const App = () => (
       <Route exact path="/locations" component={LocationsIndexContainer} />
       <Route exact path="/locations/:locationId" component={LocationShowContainer} />
       <Route exact path="/publiccat" component={PublicCatContainer} />
+      <Route exact path="/about" component={AboutContainer} />
     </main>
     <footer>
       <Route path="/" component={FooterContainer} />

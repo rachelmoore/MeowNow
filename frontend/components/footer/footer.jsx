@@ -11,7 +11,7 @@ class Footer extends React.Component {
             <div className="footer-container">
                 <div className="footer-links">
                     <div className="footer-link-item"><Link to={`/publiccat`}>"Public Cat"? &#x1F914;</Link></div>
-                    <div className="footer-link-item"><a href="rachelmoore.net">About</a></div>
+                    <div className="footer-link-item"><Link to={`/about`}>About</Link></div>
                     <div className="footer-link-item">Submit Location</div>
                 </div>
             </div>
