@@ -40,7 +40,7 @@ class About extends React.Component {
                     </div>
                     <div className="public-cat-story">
                         <div className="cat-5">
-                            <p className="public-cat-paragraph">The popularity of social media accounts like Bodega Cats of Instagram shows that I am not alone in my appreciation of “public cats”. 
+                            <p className="public-cat-paragraph"> of social media accounts like Bodega Cats of Instagram shows that I am not alone in my appreciation of “public cats”. 
                                 I hope that my fellow city-dwelling animal lovers who may not be able to have pets due to high rents and frequent relocation can use MeowNow as a resource to find cat friends and support local businesses. 
                             </p>
                         </div>
