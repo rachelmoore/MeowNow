@@ -31,7 +31,7 @@ class About extends React.Component {
                             <img src="http://res.cloudinary.com/df9oqycdp/image/upload/v1510194692/catgirl_nrj5i1.png" height="400px" />
                         </div>
                         <div className="cat-4">
-                            <p className="public-cat-paragraph">This  <a href="https://twitter.com/catfillmore">@CatFillmore</a>, a famous and friendly neighborhood character. His “real” name is Marlowe, 
+                            <p className="public-cat-paragraph">This cat is <a href="https://twitter.com/catfillmore">@CatFillmore</a>, a famous and friendly neighborhood character. His “real” name is Marlowe, 
                                 and he is the initial inspiration for this project. While I am not able to track Marlowe’s exploits all over my neighborhood so that people 
                                 might benefit from his presence, I realized that I *could* make a platform where people can find “public cats” to interact with if they are ever 
                                 feeling sad or in need of animal interaction in the city. 
