@@ -17,7 +17,7 @@ class About extends React.Component {
                                 Suddenly, a cat appeared at the end of the block. A strange sight in my new neighborhood!
                             </p> 
                             <p className="public-cat-paragraph">
-                            The cat charged toward me and leapt into my arms. I checked the cat’s 
+                             toward me and leapt into my arms. I checked the cat’s 
                             collar to make sure it was not lost or in trouble. Instead of a phone number the collar was engraved with a short message not to worry 
                             about the cat and a Twitter account URL. Even stranger. I pulled out my phone and navigated to the page. 
                             </p>
