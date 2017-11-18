@@ -10,8 +10,9 @@ class Footer extends React.Component {
         return (
             <div className="footer-container">
                 <div className="footer-links">
-                    <div className="footer-link-item"><Link to={`/publiccat`}>"Public Cat"? &#x1F914;</Link></div>
                     <div className="footer-link-item"><Link to={`/about`}>About</Link></div>
+                    <p>  |  </p>
+                    <div className="footer-link-item"><Link to={`/publiccat`}>"Public Cat"? &#x1F914;</Link></div>
                 </div>
             </div>
         );
