@@ -933,6 +933,7 @@ box-shadow: 0px 4px 6px #333;
 }
 
 .footer-link-item a {
+  font-size: 22px;
   text-decoration: none;
   color: black;
   font-weight: 300;
