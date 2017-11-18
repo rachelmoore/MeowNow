@@ -925,6 +925,7 @@ box-shadow: 0px 4px 6px #333;
 .footer-links {
   display: flex;
   justify-content: center;
+  
 }
 
 .footer-link-item {
