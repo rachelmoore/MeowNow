@@ -29,7 +29,9 @@ const App = () => (
       <Route exact path="/publiccat" component={PublicCatContainer} />
       <Route exact path="/about" component={AboutContainer} />
     </main>
-    
+    <footer>
+      <Route path="/" component={FooterContainer} />
+    </footer>
   </div>
 );
 
